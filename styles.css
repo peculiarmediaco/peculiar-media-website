@@ -403,3 +403,262 @@ footer {
   }
 
 }
+/* =========================
+   FIELD GUIDE LANDING PAGE
+   ========================= */
+
+.field-guide-hero {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 13, 13, 0.15) 0%,
+      rgba(13, 13, 13, 0.95) 100%
+    );
+}
+
+.field-guide-search-section {
+  padding: 55px 0 20px;
+}
+
+.field-guide-search-wrap {
+  max-width: 900px;
+}
+
+.field-guide-search {
+  width: 100%;
+  padding: 20px 22px;
+  background: var(--card);
+  color: var(--white);
+  border: 1px solid var(--line);
+  font: inherit;
+  font-size: 1.05rem;
+  outline: none;
+}
+
+.field-guide-search::placeholder {
+  color: var(--muted);
+}
+
+.field-guide-search:focus {
+  border-color: var(--accent);
+}
+
+.search-note {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.section-heading-row h2 {
+  margin-bottom: 0;
+}
+
+.section-description {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+
+/* REFERENCE GUIDE LIST */
+
+.guide-list {
+  border-top: 1px solid var(--line);
+}
+
+.guide-row {
+  min-height: 210px;
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 30px;
+  align-items: center;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+a.guide-row {
+  transition:
+    background 0.2s ease,
+    padding 0.2s ease;
+}
+
+a.guide-row:hover {
+  background: var(--card);
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.guide-number {
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.guide-type {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.guide-content h3 {
+  margin-bottom: 10px;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.guide-content p {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.guide-arrow {
+  font-size: 2rem;
+}
+
+.guide-status {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.guide-row.inactive {
+  opacity: 0.58;
+}
+
+
+/* PRINTABLES */
+
+.printable-section {
+  background: var(--dark);
+}
+
+.printable-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.printable-card {
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--black);
+  border: 1px solid var(--line);
+}
+
+.printable-card h3 {
+  font-size: 1.5rem;
+}
+
+.printable-card p {
+  color: var(--muted);
+}
+
+.printable-status {
+  margin-top: auto;
+  font-weight: 700;
+}
+
+
+/* QUESTIONABLE ADVICE */
+
+.questionable-section {
+  background: var(--accent);
+  color: var(--black);
+}
+
+.questionable-section .eyebrow {
+  color: var(--black);
+}
+
+.questionable-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.questionable-layout p {
+  max-width: 560px;
+  font-size: 1.08rem;
+}
+
+.coming-label {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 800;
+}
+
+
+/* FREE RULE SECTION */
+
+.field-guide-rule {
+  background: var(--white);
+  color: var(--black);
+}
+
+.field-guide-rule .eyebrow {
+  color: #9b4d22;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .field-guide-search-section {
+    padding-top: 40px;
+  }
+
+  .section-heading-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .guide-row {
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    min-height: auto;
+    padding: 28px 0;
+  }
+
+  .guide-arrow,
+  .guide-status {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  a.guide-row:hover {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+  }
+
+  .printable-grid,
+  .questionable-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .questionable-layout {
+    gap: 25px;
+  }
+
+}

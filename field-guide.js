@@ -42,6 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
     filterResources();
   });
 
+  searchInput.addEventListener("keydown", function (event) {
+
+  if (event.key === "Enter") {
+    event.preventDefault();
+
+    filterResources();
+
+    searchInput.blur();
+
+    document
+      .querySelector(".simple-resource-list")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+  }
+
+});
 
   topicCards.forEach(function (card) {
 

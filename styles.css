@@ -139,6 +139,21 @@ nav a:hover {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--line);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13, 13, 13, 0.97) 0%,
+      rgba(13, 13, 13, 0.90) 28%,
+      rgba(13, 13, 13, 0.68) 52%,
+      rgba(13, 13, 13, 0.34) 78%,
+      rgba(13, 13, 13, 0.18) 100%
+    ),
+    url("/Hero-console.jpg.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {

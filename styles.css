@@ -662,3 +662,92 @@ a.guide-row:hover {
   }
 
 }
+
+/* =========================================================
+   FIELD GUIDE — MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* Prevent sticky header from covering anchored sections */
+  html {
+    scroll-padding-top: 110px;
+  }
+
+  /* Field Guide hero */
+  .field-hero {
+    min-height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .field-hero h1 {
+    font-size: clamp(3rem, 13vw, 4.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+  }
+
+  .field-hero p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  /* Search area */
+  .field-search {
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+
+  .field-search input {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+
+  /* Main Field Guide sections */
+  .field-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .field-section h2 {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    line-height: 1;
+  }
+
+  /* Resource grid becomes one clean column */
+  .resource-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Individual resources become cards again */
+  .resource-card {
+    display: block;
+    padding: 28px 24px;
+    border: 1px solid var(--line);
+    text-decoration: none;
+  }
+
+  .resource-card h3 {
+    font-size: 1.75rem;
+    line-height: 1.05;
+    margin-top: 12px;
+    margin-bottom: 18px;
+  }
+
+  .resource-card p {
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  /* Keep links inside cards from underlining everything */
+  .resource-card,
+  .resource-card h3,
+  .resource-card p {
+    text-decoration: none;
+  }
+
+}

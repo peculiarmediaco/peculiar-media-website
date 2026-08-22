@@ -10,10 +10,10 @@
 
   <meta
     name="description"
-    content="Peculiar Media Co. — recording, live sessions, DIY studio solutions, and free studio resources."
+    content="The Peculiar Media Field Guide — free recording, mixing, studio, troubleshooting, and printable resources."
   >
 
-  <title>Peculiar Media Co.</title>
+  <title>The Field Guide | Peculiar Media Co.</title>
 
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -22,45 +22,69 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="/">PECULIAR MEDIA CO.</a>
+
+      <a class="logo" href="/">
+        PECULIAR MEDIA CO.
+      </a>
 
       <nav>
+        <a href="/">Home</a>
         <a href="/field-guide/">Field Guide</a>
-        <a href="#sessions">Sessions</a>
-        <a href="#studio">Studio</a>
-        <a href="#contact">Contact</a>
+        <a href="/#sessions">Sessions</a>
+        <a href="/#studio">Studio</a>
+        <a href="/#contact">Contact</a>
       </nav>
+
     </div>
   </header>
 
 
   <main>
 
-    <section class="hero">
-      <div class="container hero-content">
+    <section class="page-hero field-guide-hero">
+      <div class="container">
 
-        <p class="eyebrow">FORT DODGE, IOWA</p>
-
-        <h1>
-          RECORDING.<br>
-          LIVE SESSIONS.<br>
-          DIY SOLUTIONS.
-        </h1>
-
-        <p class="hero-copy">
-          Peculiar Media Co. is a small recording studio, live-session
-          project, and home of the completely free Peculiar Media Field Guide.
+        <p class="eyebrow">
+          FREE STUDIO RESOURCES
         </p>
 
-        <div class="hero-buttons">
-          <a class="button primary" href="/field-guide/">
-            Explore the Field Guide
-          </a>
+        <h1>
+          THE PECULIAR<br>
+          MEDIA FIELD GUIDE
+        </h1>
 
-          <a class="button secondary" href="#studio">
-            What's Peculiar Media?
-          </a>
+        <p class="page-intro">
+          Practical recording, mixing, microphone, signal-flow,
+          troubleshooting, and studio resources.
+        </p>
+
+        <p class="page-intro">
+          No account. No email gate. Just useful stuff.
+        </p>
+
+      </div>
+    </section>
+
+
+    <section class="field-guide-search-section">
+      <div class="container">
+
+        <p class="eyebrow">
+          WHAT ARE YOU TRYING TO FIGURE OUT?
+        </p>
+
+        <div class="field-guide-search-wrap">
+          <input
+            type="search"
+            class="field-guide-search"
+            placeholder="Search the Field Guide..."
+            aria-label="Search the Field Guide"
+          >
         </div>
+
+        <p class="search-note">
+          Search is being built now. For the moment, browse by section below.
+        </p>
 
       </div>
     </section>
@@ -69,114 +93,272 @@
     <section class="section">
       <div class="container">
 
-        <p class="eyebrow">START HERE</p>
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">REFERENCE GUIDES</p>
+            <h2>Look it up.</h2>
+          </div>
 
-        <h2>A few different ways to make noise.</h2>
+          <p class="section-description">
+            Web-first resources made for quick answers, mobile reference,
+            and easier searching.
+          </p>
+        </div>
 
-        <div class="card-grid">
 
-          <a class="feature-card" href="/field-guide/">
-            <span class="card-number">01</span>
+        <div class="guide-list">
 
-            <h3>THE FIELD GUIDE</h3>
+          <a class="guide-row" href="#">
+            <span class="guide-number">01</span>
 
-            <p>
-              Practical recording, mixing, microphone, troubleshooting,
-              signal-flow, and studio resources.
-            </p>
+            <div class="guide-content">
+              <span class="guide-type">REFERENCE LIBRARY</span>
 
-            <strong>Free forever →</strong>
+              <h3>MIX REFERENCE LIBRARY</h3>
+
+              <p>
+                Instruments, frequency ranges, common problems,
+                useful EQ moves, compression starting points,
+                and practical mix notes.
+              </p>
+            </div>
+
+            <span class="guide-arrow">→</span>
           </a>
 
 
-          <div class="feature-card" id="sessions">
-            <span class="card-number">02</span>
+          <div class="guide-row inactive">
+            <span class="guide-number">02</span>
 
-            <h3>LIVE SESSIONS</h3>
+            <div class="guide-content">
+              <span class="guide-type">REFERENCE GUIDE</span>
 
-            <p>
-              Bands in a basement. Amps, drums, microphone bleed,
-              and hopefully a decent take.
-            </p>
+              <h3>MICROPHONES</h3>
 
-            <strong>Sessions coming soon.</strong>
+              <p>
+                Pickup patterns, microphone types, source selection,
+                placement ideas, and practical starting points.
+              </p>
+            </div>
+
+            <span class="guide-status">COMING SOON</span>
           </div>
 
 
-          <div class="feature-card" id="studio">
-            <span class="card-number">03</span>
+          <div class="guide-row inactive">
+            <span class="guide-number">03</span>
 
-            <h3>THE STUDIO</h3>
+            <div class="guide-content">
+              <span class="guide-type">REFERENCE GUIDE</span>
 
-            <p>
-              Recording, mixing, mastering, old gear, DIY builds,
-              and practical studio problem-solving.
-            </p>
+              <h3>SIGNAL FLOW</h3>
 
-            <strong>More coming soon.</strong>
+              <p>
+                Channels, buses, inserts, sends, returns, routing,
+                gain staging, and understanding where the signal went.
+              </p>
+            </div>
+
+            <span class="guide-status">COMING SOON</span>
+          </div>
+
+
+          <div class="guide-row inactive">
+            <span class="guide-number">04</span>
+
+            <div class="guide-content">
+              <span class="guide-type">TROUBLESHOOTING</span>
+
+              <h3>WHEN NOTHING WORKS</h3>
+
+              <p>
+                No signal, hum, clipping, phase trouble,
+                routing problems, and other studio mysteries.
+              </p>
+            </div>
+
+            <span class="guide-status">COMING SOON</span>
           </div>
 
         </div>
+
       </div>
     </section>
 
 
-    <section class="section field-guide-callout">
-      <div class="container callout-layout">
+    <section class="section printable-section">
+      <div class="container">
+
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">PRINTABLE TOOLS</p>
+            <h2>Use it in the room.</h2>
+          </div>
+
+          <p class="section-description">
+            Checklists, forms, and quick-reference sheets intended
+            to be printed, written on, and kept nearby.
+          </p>
+        </div>
+
+
+        <div class="printable-grid">
+
+          <div class="printable-card">
+            <span class="guide-type">CHECKLIST</span>
+
+            <h3>PRE-LIVE SESSION CHECKLIST</h3>
+
+            <p>
+              A practical run-through before the session starts:
+              routing, microphones, headphones, recording,
+              cameras, and the small things that are easy to miss.
+            </p>
+
+            <span class="printable-status">
+              PDF coming soon
+            </span>
+          </div>
+
+
+          <div class="printable-card">
+            <span class="guide-type">SESSION FORM</span>
+
+            <h3>SESSION INFORMATION</h3>
+
+            <p>
+              Artist, song, instrumentation, microphone,
+              routing, and session information in one place.
+            </p>
+
+            <span class="printable-status">
+              PDF coming soon
+            </span>
+          </div>
+
+
+          <div class="printable-card">
+            <span class="guide-type">SESSION FORM</span>
+
+            <h3>POST-SESSION NOTES</h3>
+
+            <p>
+              Track problems, editing notes, mix decisions,
+              fixes, reminders, and anything worth remembering later.
+            </p>
+
+            <span class="printable-status">
+              PDF coming soon
+            </span>
+          </div>
+
+
+          <div class="printable-card">
+            <span class="guide-type">QUICK REFERENCE</span>
+
+            <h3>EQ QUICK REFERENCE</h3>
+
+            <p>
+              Frequency areas, common descriptions,
+              and practical starting points for common sources.
+            </p>
+
+            <span class="printable-status">
+              PDF coming soon
+            </span>
+          </div>
+
+
+          <div class="printable-card">
+            <span class="guide-type">QUICK REFERENCE</span>
+
+            <h3>COMPRESSION QUICK REFERENCE</h3>
+
+            <p>
+              Ratio, attack, release, and starting-point ideas
+              for common instruments and recording situations.
+            </p>
+
+            <span class="printable-status">
+              PDF coming soon
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section questionable-section">
+      <div class="container questionable-layout">
 
         <div>
-          <p class="eyebrow">THE PECULIAR MEDIA FIELD GUIDE</p>
+          <p class="eyebrow">QUESTIONABLE ADVICE</p>
 
           <h2>
-            Useful information.<br>
-            No email gate.
+            Try something<br>
+            a little different.
           </h2>
         </div>
 
         <div>
           <p>
-            The Field Guide is a growing library of practical resources
-            for recording musicians, home studios, producers, and anyone
-            trying to understand how the whole thing actually works.
+            Experiments, unusual techniques, odd settings,
+            and ideas worth trying when the obvious answer
+            is not getting you where you want to go.
           </p>
 
           <p>
-            Download it. Print it. Share it. Give it to somebody who needs it.
+            Some are useful. Some are strange.
+            All of them are meant to get you experimenting.
           </p>
 
-          <a class="text-link" href="/field-guide/">
-            Browse the Field Guide →
-          </a>
+          <span class="coming-label">
+            Collection coming soon.
+          </span>
         </div>
 
       </div>
     </section>
 
 
-    <section class="section" id="contact">
-      <div class="container contact">
+    <section class="section field-guide-rule">
+      <div class="container callout-layout">
 
-        <p class="eyebrow">PECULIAR MEDIA CO.</p>
+        <div>
+          <p class="eyebrow">
+            THE RULE
+          </p>
 
-        <h2>Make something your own.</h2>
+          <h2>
+            Free means free.
+          </h2>
+        </div>
 
-        <p>
-          Recording, mixing, live sessions, free resources,
-          DIY studio solutions, and whatever hands-on project comes next.
-        </p>
+        <div>
+          <p>
+            The Peculiar Media Field Guide is intended to remain
+            freely accessible.
+          </p>
 
-        <div class="contact-links">
-          <a href="https://linktr.ee/peculiarmediaco">
-            Links & Socials
+          <p>
+            Download it. Print it. Share it.
+            Give it to somebody who needs it.
+          </p>
+
+          <p>
+            If something is wrong, outdated, confusing,
+            or missing, let me know.
+          </p>
+
+          <a
+            class="text-link"
+            href="mailto:peculiarmediacompany@gmail.com"
+          >
+            Send a correction →
           </a>
 
-          <a href="mailto:peculiarmediacompany@gmail.com">
-            Email
-          </a>
-
-          <a href="https://ko-fi.com/peculiarmediaco">
-            Support Peculiar Media
-          </a>
         </div>
 
       </div>
@@ -187,8 +369,15 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© 2026 Peculiar Media Co.</span>
-      <span>Made somewhere underneath Iowa.</span>
+
+      <span>
+        © 2026 Peculiar Media Co.
+      </span>
+
+      <span>
+        Practical information. Built to be used.
+      </span>
+
     </div>
   </footer>
 

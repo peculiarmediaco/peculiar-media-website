@@ -216,6 +216,21 @@
 
     searchInput.addEventListener("input", filterReferences);
 
+    searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+
+    filterReferences();
+
+    document.querySelector(".reference-results").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    searchInput.blur();
+  }
+});
+
     filterButtons.forEach(button => {
       button.addEventListener("click", () => {
 

@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="The Peculiar Media Mix Reference Library — songs and recordings worth studying for mixing and production."
+  >
+
+  <title>Mix Reference Library | Peculiar Media Co.</title>
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">PECULIAR MEDIA CO.</a>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/field-guide/">Field Guide</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="reference-hero">
+      <div class="container">
+
+        <p class="eyebrow">MIX REFERENCE LIBRARY</p>
+
+        <h1>Something worth listening to.</h1>
+
+        <p class="reference-intro">
+          A growing collection of songs and recordings that are useful
+          for studying different approaches to mixing and production.
+        </p>
+
+        <p class="reference-intro">
+          These aren't rules. They're examples. Find something interesting,
+          listen closely, and steal the idea responsibly.
+        </p>
+
+      </div>
+    </section>
+
+
+    <section class="reference-tools">
+      <div class="container">
+
+        <label for="reference-search" class="eyebrow">
+          WHAT ARE YOU LOOKING FOR?
+        </label>
+
+        <input
+          type="search"
+          id="reference-search"
+          placeholder="Search songs, artists, sounds, genres..."
+        >
+
+        <div class="reference-filters">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="drums">Drums</button>
+          <button class="filter-button" data-filter="bass">Bass</button>
+          <button class="filter-button" data-filter="vocals">Vocals</button>
+          <button class="filter-button" data-filter="guitars">Guitars</button>
+          <button class="filter-button" data-filter="space">Space</button>
+          <button class="filter-button" data-filter="dynamics">Dynamics</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="reference-results">
+      <div class="container">
+
+        <p class="eyebrow">THE LIBRARY</p>
+
+        <div id="reference-list">
+
+
+          <!-- TEST ENTRY 01 -->
+
+          <article
+            class="reference-entry"
+            data-tags="rock drums guitars dynamics"
+          >
+
+            <div class="reference-entry-heading">
+              <div>
+                <span class="reference-number">01</span>
+                <h2>Test Song</h2>
+                <p class="reference-artist">Test Artist</p>
+              </div>
+
+              <span class="reference-genre">ROCK</span>
+            </div>
+
+            <div class="reference-tags">
+              <span>DRUMS</span>
+              <span>GUITARS</span>
+              <span>DYNAMICS</span>
+            </div>
+
+            <div class="reference-notes">
+              <strong>LISTEN FOR</strong>
+
+              <p>
+                This is our temporary test entry. Eventually this will explain
+                what makes the recording useful as a mix reference and what
+                you might want to pay attention to while listening.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- TEST ENTRY 02 -->
+
+          <article
+            class="reference-entry"
+            data-tags="indie vocals space"
+          >
+
+            <div class="reference-entry-heading">
+              <div>
+                <span class="reference-number">02</span>
+                <h2>Another Test Song</h2>
+                <p class="reference-artist">Another Artist</p>
+              </div>
+
+              <span class="reference-genre">INDIE</span>
+            </div>
+
+            <div class="reference-tags">
+              <span>VOCALS</span>
+              <span>SPACE</span>
+            </div>
+
+            <div class="reference-notes">
+              <strong>LISTEN FOR</strong>
+
+              <p>
+                Another temporary entry so we can make sure searching,
+                filtering, and the page layout work before filling the
+                library with real songs.
+              </p>
+            </div>
+
+          </article>
+
+
+        </div>
+
+        <p id="no-reference-results" hidden>
+          Nothing here yet. Try another search.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Peculiar Media Co.</span>
+      <span>Make music. Have fun. Share what works.</span>
+    </div>
+  </footer>
+
+
+  <script>
+    const searchInput = document.getElementById("reference-search");
+    const entries = document.querySelectorAll(".reference-entry");
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const noResults = document.getElementById("no-reference-results");
+
+    let activeFilter = "all";
+
+    function filterReferences() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      entries.forEach(entry => {
+        const searchableText = entry.textContent.toLowerCase();
+        const tags = entry.dataset.tags.toLowerCase();
+
+        const matchesSearch =
+          searchTerm === "" || searchableText.includes(searchTerm);
+
+        const matchesFilter =
+          activeFilter === "all" || tags.includes(activeFilter);
+
+        if (matchesSearch && matchesFilter) {
+          entry.style.display = "";
+          visibleCount++;
+        } else {
+          entry.style.display = "none";
+        }
+      });
+
+      noResults.hidden = visibleCount !== 0;
+    }
+
+    searchInput.addEventListener("input", filterReferences);
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        activeFilter = button.dataset.filter;
+
+        filterReferences();
+      });
+    });
+  </script>
+
+</body>
+</html>

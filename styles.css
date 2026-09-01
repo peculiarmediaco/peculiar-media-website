@@ -1090,3 +1090,76 @@ footer {
   }
 
 }
+
+/* =========================================================
+   TROUBLESHOOTER CONTRIBUTION CTA
+   ========================================================= */
+
+.troubleshooter-contribute {
+  padding: 80px 8%;
+  border-bottom: 1px solid var(--line);
+}
+
+.troubleshooter-contribute h2 {
+  margin-top: 8px;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.troubleshooter-contribute p {
+  max-width: 700px;
+  line-height: 1.65;
+  opacity: 0.8;
+}
+
+.troubleshooter-contribute-link {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 16px 22px;
+  background: var(--accent);
+  color: #111;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   CONTRIBUTION PAGE
+   ========================================================= */
+
+.contribute-page-hero {
+  padding: 110px 8% 70px;
+  border-bottom: 1px solid var(--line);
+}
+
+.contribute-page-hero h1 {
+  margin: 12px 0 24px;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.contribute-page-hero > p {
+  max-width: 760px;
+  line-height: 1.65;
+}
+
+.contribute-page-note {
+  margin-top: 22px;
+  opacity: 0.6;
+}
+
+.contribute-form-section {
+  padding: 70px 8% 90px;
+}
+
+
+@media (max-width: 800px) {
+
+  .troubleshooter-contribute,
+  .contribute-page-hero,
+  .contribute-form-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+}

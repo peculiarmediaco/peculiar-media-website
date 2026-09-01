@@ -389,6 +389,32 @@ troubleChoices.forEach((button) => {
 
     if (!target) return;
 
+    /*
+      If this button is inside a trouble step,
+      hide any other answer steps that belong to the same level.
+    */
+    const currentStep = button.closest(".trouble-step");
+
+    if (currentStep) {
+
+      const answerIds = Array.from(
+        currentStep.querySelectorAll(".trouble-choice")
+      )
+      .map(choice => choice.dataset.target)
+      .filter(Boolean);
+
+      answerIds.forEach((id) => {
+
+        const section = document.getElementById(id);
+
+        if (section && section !== target) {
+          section.hidden = true;
+        }
+
+      });
+
+    }
+
     target.hidden = false;
 
     target.scrollIntoView({

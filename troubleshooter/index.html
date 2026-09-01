@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Studio Troubleshooter | Peculiar Media Co.</title>
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo">PECULIAR MEDIA CO.</a>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/field-guide/">Field Guide</a>
+  </nav>
+</header>
+
+
+<main>
+
+  <section class="troubleshooter-hero">
+
+    <p class="eyebrow">PECULIAR MEDIA STUDIO TROUBLESHOOTER</p>
+
+    <h1>
+      SOMETHING<br>
+      SOUNDS WRONG.
+    </h1>
+
+    <p class="troubleshooter-intro">
+      Start with what you're hearing. We'll work backward from there.
+    </p>
+
+    <p class="troubleshooter-philosophy">
+      Identify the problem first. Remove what you can. Add only what helps.
+    </p>
+
+  </section>
+
+
+  <section class="troubleshooter-start">
+
+    <div class="section-heading">
+      <span>START HERE</span>
+      <h2>What's going wrong?</h2>
+    </div>
+
+
+    <div class="troubleshooter-grid">
+
+      <a href="#mixing" class="troubleshooter-card">
+        <span class="trouble-number">01</span>
+        <h3>MIXING</h3>
+        <p>
+          Something you recorded doesn't sound right in the mix.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#recording" class="troubleshooter-card">
+        <span class="trouble-number">02</span>
+        <h3>RECORDING</h3>
+        <p>
+          The sound isn't coming into the recording the way you expected.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#routing" class="troubleshooter-card">
+        <span class="trouble-number">03</span>
+        <h3>ROUTING & SIGNAL FLOW</h3>
+        <p>
+          You have signal somewhere, but can't get it where it needs to go.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#noise" class="troubleshooter-card">
+        <span class="trouble-number">04</span>
+        <h3>NOISE, HUM & BUZZ</h3>
+        <p>
+          Something is making noise that definitely wasn't invited.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#monitoring" class="troubleshooter-card">
+        <span class="trouble-number">05</span>
+        <h3>MONITORING & HEADPHONES</h3>
+        <p>
+          You can't hear something, someone else can't hear something,
+          or the monitoring setup isn't behaving.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#connections" class="troubleshooter-card">
+        <span class="trouble-number">06</span>
+        <h3>GEAR & CONNECTIONS</h3>
+        <p>
+          You're trying to figure out whether this thing can connect
+          to that other thing.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#computer" class="troubleshooter-card">
+        <span class="trouble-number">07</span>
+        <h3>DAW & INTERFACE</h3>
+        <p>
+          Your computer, interface, drivers, or DAW aren't doing
+          what you expect.
+        </p>
+        <strong>Start troubleshooting →</strong>
+      </a>
+
+
+      <a href="#unknown" class="troubleshooter-card">
+        <span class="trouble-number">08</span>
+        <h3>I DON'T KNOW WHAT'S WRONG</h3>
+        <p>
+          Something is wrong. That's about as far as you've gotten.
+          That's enough to start.
+        </p>
+        <strong>Help me figure it out →</strong>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="troubleshooter-preview" id="mixing">
+
+    <p class="eyebrow">FIRST BRANCH</p>
+
+    <h2>Mixing</h2>
+
+    <p>
+      We're starting here and expanding the Troubleshooter over time.
+    </p>
+
+
+    <div class="mix-category-grid">
+
+      <button type="button">VOCALS</button>
+      <button type="button">DRUMS</button>
+      <button type="button">GUITAR</button>
+      <button type="button">BASS</button>
+      <button type="button">KEYS / SYNTH</button>
+      <button type="button">FULL MIX</button>
+
+    </div>
+
+  </section>
+
+
+  <section class="contribute-section">
+
+    <p class="eyebrow">HELP BUILD THIS THING</p>
+
+    <h2>Run into something we missed?</h2>
+
+    <p class="contribute-intro">
+      The Studio Troubleshooter is a living resource.
+      If you've run into a weird problem, found a solution,
+      or think something here needs correcting, send it our way.
+    </p>
+
+
+    <form class="contribute-form">
+
+      <fieldset>
+
+        <legend>What are you sending us?</legend>
+
+        <label>
+          <input type="radio" name="submission-type" value="problem">
+          I have a problem the Troubleshooter should cover
+        </label>
+
+        <label>
+          <input type="radio" name="submission-type" value="solution">
+          I found a solution that worked
+        </label>
+
+        <label>
+          <input type="radio" name="submission-type" value="correction">
+          I think something in the Troubleshooter needs correcting
+        </label>
+
+      </fieldset>
+
+
+      <label for="category">Category</label>
+
+      <select id="category" name="category">
+        <option value="">Choose one</option>
+        <option>Mixing</option>
+        <option>Recording</option>
+        <option>Routing / Signal Flow</option>
+        <option>Noise / Hum / Buzz</option>
+        <option>Monitoring / Headphones</option>
+        <option>Gear / Connections</option>
+        <option>DAW / Interface</option>
+        <option>Other / Not Sure</option>
+      </select>
+
+
+      <label for="problem">What happened?</label>
+
+      <textarea
+        id="problem"
+        name="problem"
+        rows="6"
+        placeholder="Describe what you were trying to do and what went wrong."
+      ></textarea>
+
+
+      <label for="equipment">What equipment or software was involved?</label>
+
+      <textarea
+        id="equipment"
+        name="equipment"
+        rows="3"
+        placeholder="Mixer, interface, microphones, DAW, operating system, plugins, etc."
+      ></textarea>
+
+
+      <label for="tried">What did you try?</label>
+
+      <textarea
+        id="tried"
+        name="tried"
+        rows="4"
+        placeholder="Tell us what you changed, tested, replaced, bypassed, or ruled out."
+      ></textarea>
+
+
+      <label for="solution">What eventually worked?</label>
+
+      <textarea
+        id="solution"
+        name="solution"
+        rows="4"
+        placeholder="If you solved it, tell us what fixed it."
+      ></textarea>
+
+
+      <label for="sources">
+        Documentation or sources
+        <span class="optional">(optional)</span>
+      </label>
+
+      <textarea
+        id="sources"
+        name="sources"
+        rows="3"
+        placeholder="Manuals, manufacturer documentation, articles, standards, etc."
+      ></textarea>
+
+
+      <div class="form-two-column">
+
+        <div>
+          <label for="name">
+            Name or handle
+            <span class="optional">(optional)</span>
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="@yourname"
+          >
+        </div>
+
+
+        <div>
+          <label for="email">
+            Email
+            <span class="optional">(optional)</span>
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="If we can contact you with questions"
+          >
+        </div>
+
+      </div>
+
+
+      <label class="permission-check">
+
+        <input
+          type="checkbox"
+          name="permission"
+          value="yes"
+        >
+
+        Peculiar Media may research, edit, adapt, and include information
+        from this submission in the free Field Guide.
+
+      </label>
+
+
+      <button class="submit-contribution" type="button">
+        SEND TO PECULIAR MEDIA
+      </button>
+
+      <p class="form-note">
+        Submission does not guarantee publication.
+        Technical claims may be researched or verified before being added.
+      </p>
+
+    </form>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>MAKE MUSIC. HAVE FUN. SHARE WHAT WORKS.</p>
+</footer>
+
+
+</body>
+</html>

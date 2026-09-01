@@ -143,27 +143,205 @@
 
   <section class="troubleshooter-preview" id="mixing">
 
-    <p class="eyebrow">FIRST BRANCH</p>
+  <p class="eyebrow">MIXING</p>
 
-    <h2>Mixing</h2>
+  <h2>What are you working on?</h2>
 
-    <p>
-      We're starting here and expanding the Troubleshooter over time.
-    </p>
+  <p>
+    Pick the part of the mix that's giving you trouble.
+  </p>
 
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocals-problems">
+      VOCALS
+    </button>
+
+    <button type="button" disabled>
+      DRUMS
+    </button>
+
+    <button type="button" disabled>
+      GUITAR
+    </button>
+
+    <button type="button" disabled>
+      BASS
+    </button>
+
+    <button type="button" disabled>
+      KEYS / SYNTH
+    </button>
+
+    <button type="button" disabled>
+      FULL MIX
+    </button>
+
+  </div>
+
+
+  <div class="trouble-step"
+       id="vocals-problems"
+       hidden>
+
+    <p class="eyebrow">VOCALS</p>
+
+    <h2>What's wrong with the vocal?</h2>
 
     <div class="mix-category-grid">
 
-      <button type="button">VOCALS</button>
-      <button type="button">DRUMS</button>
-      <button type="button">GUITAR</button>
-      <button type="button">BASS</button>
-      <button type="button">KEYS / SYNTH</button>
-      <button type="button">FULL MIX</button>
+      <button type="button"
+              class="trouble-choice"
+              data-target="vocal-level-problem">
+        TOO LOUD SOMETIMES / TOO QUIET SOMETIMES
+      </button>
+
+      <button type="button" disabled>
+        BURIED
+      </button>
+
+      <button type="button" disabled>
+        HARSH
+      </button>
+
+      <button type="button" disabled>
+        MUDDY
+      </button>
+
+      <button type="button" disabled>
+        THIN
+      </button>
+
+      <button type="button" disabled>
+        TOO MUCH S / SIBILANCE
+      </button>
 
     </div>
 
-  </section>
+  </div>
+
+
+  <div class="trouble-step"
+       id="vocal-level-problem"
+       hidden>
+
+    <p class="eyebrow">VOCALS / LEVEL</p>
+
+    <h2>
+      Is the whole vocal too loud or too quiet,
+      or does the level keep changing?
+    </h2>
+
+    <div class="mix-category-grid">
+
+      <button type="button"
+              class="trouble-choice"
+              data-target="whole-vocal-level">
+        THE WHOLE VOCAL IS TOO LOUD OR TOO QUIET
+      </button>
+
+      <button type="button"
+              class="trouble-choice"
+              data-target="changing-vocal-level">
+        THE LEVEL CHANGES THROUGHOUT THE SONG
+      </button>
+
+      <button type="button"
+              class="trouble-choice"
+              data-target="word-level-problem">
+        INDIVIDUAL WORDS OR PHRASES JUMP OUT OR DISAPPEAR
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="trouble-step"
+       id="whole-vocal-level"
+       hidden>
+
+    <p class="eyebrow">TRY THIS FIRST</p>
+
+    <h2>Adjust the vocal level.</h2>
+
+    <p>
+      If the vocal is consistently too loud or too quiet,
+      start with the simplest fix: change the fader level.
+    </p>
+
+    <p>
+      Don't reach for compression just because the vocal is sitting
+      at the wrong overall level.
+    </p>
+
+    <div class="trouble-tip">
+      <strong>Subtractive thought:</strong>
+      Before turning the vocal up, ask whether something else could come down.
+      A competing guitar, keyboard, cymbal, or other element may be masking it.
+    </div>
+
+  </div>
+
+
+  <div class="trouble-step"
+       id="changing-vocal-level"
+       hidden>
+
+    <p class="eyebrow">TRY THIS FIRST</p>
+
+    <h2>Try volume automation.</h2>
+
+    <p>
+      If entire lines or sections are too loud or too quiet,
+      automation lets you correct the level deliberately instead of
+      asking a compressor to solve every change.
+    </p>
+
+    <p>
+      Bring down sections that jump forward.
+      Bring up sections that disappear.
+      Listen again before adding anything else.
+    </p>
+
+    <div class="trouble-tip">
+      <strong>Then consider compression:</strong>
+      Compression can help control shorter level changes and make the
+      performance feel more consistent, but it doesn't replace thoughtful
+      level balance.
+    </div>
+
+  </div>
+
+
+  <div class="trouble-step"
+       id="word-level-problem"
+       hidden>
+
+    <p class="eyebrow">TRY THIS FIRST</p>
+
+    <h2>Listen for individual problem words.</h2>
+
+    <p>
+      If a few words suddenly jump forward or disappear,
+      you may not need to process the entire vocal more heavily.
+    </p>
+
+    <p>
+      Try clip gain or volume automation on the specific problem areas first.
+    </p>
+
+    <div class="trouble-tip">
+      <strong>If it keeps happening:</strong>
+      Gentle compression may help reduce the difference between louder
+      and quieter moments.
+    </div>
+
+  </div>
+
+</section>
 
 
 <section class="troubleshooter-contribute">
@@ -198,6 +376,31 @@
   <p>MAKE MUSIC. HAVE FUN. SHARE WHAT WORKS.</p>
 </footer>
 
+  <script>
+
+const troubleChoices = document.querySelectorAll(".trouble-choice");
+
+troubleChoices.forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    const targetId = button.dataset.target;
+    const target = document.getElementById(targetId);
+
+    if (!target) return;
+
+    target.hidden = false;
+
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+  });
+
+});
+
+</script>
 
 </body>
 </html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contribute to the Troubleshooter | Peculiar Media Co.</title>
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <a href="/" class="logo">
+    PECULIAR MEDIA CO.
+  </a>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/field-guide/">Field Guide</a>
+    <a href="/troubleshooter/">Troubleshooter</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+  <section class="contribute-page-hero">
+
+    <p class="eyebrow">
+      HELP BUILD THE TROUBLESHOOTER
+    </p>
+
+    <h1>
+      FOUND SOMETHING<br>
+      WE MISSED?
+    </h1>
+
+    <p>
+      Recording setups are weird.
+      If you've run into a problem we haven't covered,
+      found a solution that worked, or spotted something that needs correcting,
+      send it our way.
+    </p>
+
+    <p class="contribute-page-note">
+      Submissions are reviewed before anything is added to the Field Guide.
+      Technical claims may be researched or verified first.
+    </p>
+
+  </section>
+
+
+  <section class="contribute-form-section">
+
+    <form class="contribute-form">
+
+      <fieldset>
+
+        <legend>What are you sending us?</legend>
+
+        <label>
+          <input
+            type="radio"
+            name="submission-type"
+            value="problem"
+            required
+          >
+          I have a problem the Troubleshooter should cover
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="submission-type"
+            value="solution"
+          >
+          I found a solution that worked
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="submission-type"
+            value="correction"
+          >
+          I think something in the Troubleshooter needs correcting
+        </label>
+
+      </fieldset>
+
+
+      <label for="category">
+        Category
+      </label>
+
+      <select id="category"
+              name="category"
+              required>
+
+        <option value="">
+          Choose one
+        </option>
+
+        <option>Mixing</option>
+        <option>Recording</option>
+        <option>Routing / Signal Flow</option>
+        <option>Noise / Hum / Buzz</option>
+        <option>Monitoring / Headphones</option>
+        <option>Gear / Connections</option>
+        <option>DAW / Interface</option>
+        <option>Other / Not Sure</option>
+
+      </select>
+
+
+      <label for="problem">
+        What happened?
+      </label>
+
+      <textarea
+        id="problem"
+        name="problem"
+        rows="6"
+        required
+        placeholder="What were you trying to do? What happened instead?"
+      ></textarea>
+
+
+      <label for="equipment">
+        What equipment or software was involved?
+      </label>
+
+      <textarea
+        id="equipment"
+        name="equipment"
+        rows="3"
+        placeholder="Mixer, interface, microphones, DAW, plugins, operating system, cables, etc."
+      ></textarea>
+
+
+      <label for="tried">
+        What did you try?
+      </label>
+
+      <textarea
+        id="tried"
+        name="tried"
+        rows="4"
+        placeholder="Tell us what you changed, tested, replaced, bypassed, or ruled out."
+      ></textarea>
+
+
+      <label for="solution">
+        What eventually worked?
+        <span class="optional">(if you solved it)</span>
+      </label>
+
+      <textarea
+        id="solution"
+        name="solution"
+        rows="4"
+        placeholder="What fixed the problem?"
+      ></textarea>
+
+
+      <label for="why">
+        Why do you think it worked?
+        <span class="optional">(optional)</span>
+      </label>
+
+      <textarea
+        id="why"
+        name="why"
+        rows="4"
+        placeholder="Your explanation is useful even if you're not completely sure."
+      ></textarea>
+
+
+      <label for="sources">
+        Documentation or sources
+        <span class="optional">(optional)</span>
+      </label>
+
+      <textarea
+        id="sources"
+        name="sources"
+        rows="3"
+        placeholder="Manuals, manufacturer documentation, technical articles, standards, etc."
+      ></textarea>
+
+
+      <div class="form-two-column">
+
+        <div>
+
+          <label for="name">
+            Name or handle
+            <span class="optional">(optional)</span>
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="@yourname"
+          >
+
+        </div>
+
+
+        <div>
+
+          <label for="email">
+            Email
+            <span class="optional">(optional)</span>
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="If we can contact you with questions"
+          >
+
+        </div>
+
+      </div>
+
+
+      <label class="permission-check">
+
+        <input
+          type="checkbox"
+          name="permission"
+          value="yes"
+          required
+        >
+
+        Peculiar Media may research, edit, adapt, and include information
+        from this submission in the free Field Guide.
+
+      </label>
+
+
+      <button
+        class="submit-contribution"
+        type="button"
+      >
+        SEND TO PECULIAR MEDIA
+      </button>
+
+
+      <p class="form-note">
+        Submission does not guarantee publication.
+        Advice that appears unsafe, misleading, or unsupported may not be included.
+      </p>
+
+    </form>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>
+    MAKE MUSIC. HAVE FUN. SHARE WHAT WORKS.
+  </p>
+</footer>
+
+</body>
+</html>

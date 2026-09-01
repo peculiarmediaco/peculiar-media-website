@@ -1163,3 +1163,36 @@ footer {
   }
 
 }
+
+/* =========================================================
+   TROUBLESHOOTER DECISION STEPS
+   ========================================================= */
+
+.trouble-step {
+  margin-top: 70px;
+  padding-top: 60px;
+  border-top: 1px solid var(--line);
+}
+
+.trouble-step h2 {
+  max-width: 900px;
+}
+
+.trouble-step > p {
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+.trouble-tip {
+  max-width: 760px;
+  margin-top: 28px;
+  padding: 22px;
+  border-left: 3px solid var(--accent);
+  background: rgba(255,255,255,0.03);
+  line-height: 1.65;
+}
+
+.mix-category-grid button:disabled {
+  opacity: 0.28;
+  cursor: not-allowed;
+}

@@ -182,164 +182,627 @@
   </div>
 
 
-  <div class="trouble-step"
-       id="vocals-problems"
-       hidden>
+  <!-- =====================================================
+     VOCALS
+     ===================================================== -->
 
-    <p class="eyebrow">VOCALS</p>
+<div class="trouble-step"
+     id="vocals-problems"
+     hidden>
 
-    <h2>What's wrong with the vocal?</h2>
+  <p class="eyebrow">VOCALS</p>
 
-    <div class="mix-category-grid">
+  <h2>What's wrong with the vocal?</h2>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="vocal-level-problem">
-        TOO LOUD SOMETIMES / TOO QUIET SOMETIMES
-      </button>
+  <div class="mix-category-grid">
 
-      <button type="button" disabled>
-        BURIED
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-level-problem">
+      TOO LOUD SOMETIMES / TOO QUIET SOMETIMES
+    </button>
 
-      <button type="button" disabled>
-        HARSH
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-buried">
+      BURIED IN THE MIX
+    </button>
 
-      <button type="button" disabled>
-        MUDDY
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-harsh">
+      HARSH / HURTS MY EARS
+    </button>
 
-      <button type="button" disabled>
-        THIN
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-muddy">
+      MUDDY / BOXY
+    </button>
 
-      <button type="button" disabled>
-        TOO MUCH S / SIBILANCE
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-thin">
+      THIN / WEAK
+    </button>
 
-    </div>
-
-  </div>
-
-
-  <div class="trouble-step"
-       id="vocal-level-problem"
-       hidden>
-
-    <p class="eyebrow">VOCALS / LEVEL</p>
-
-    <h2>
-      Is the whole vocal too loud or too quiet,
-      or does the level keep changing?
-    </h2>
-
-    <div class="mix-category-grid">
-
-      <button type="button"
-              class="trouble-choice"
-              data-target="whole-vocal-level">
-        THE WHOLE VOCAL IS TOO LOUD OR TOO QUIET
-      </button>
-
-      <button type="button"
-              class="trouble-choice"
-              data-target="changing-vocal-level">
-        THE LEVEL CHANGES THROUGHOUT THE SONG
-      </button>
-
-      <button type="button"
-              class="trouble-choice"
-              data-target="word-level-problem">
-        INDIVIDUAL WORDS OR PHRASES JUMP OUT OR DISAPPEAR
-      </button>
-
-    </div>
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-sibilance">
+      TOO MUCH S / SIBILANCE
+    </button>
 
   </div>
 
-
-  <div class="trouble-step"
-       id="whole-vocal-level"
-       hidden>
-
-    <p class="eyebrow">TRY THIS FIRST</p>
-
-    <h2>Adjust the vocal level.</h2>
-
-    <p>
-      If the vocal is consistently too loud or too quiet,
-      start with the simplest fix: change the fader level.
-    </p>
-
-    <p>
-      Don't reach for compression just because the vocal is sitting
-      at the wrong overall level.
-    </p>
-
-    <div class="trouble-tip">
-      <strong>Subtractive thought:</strong>
-      Before turning the vocal up, ask whether something else could come down.
-      A competing guitar, keyboard, cymbal, or other element may be masking it.
-    </div>
-
-  </div>
+</div>
 
 
-  <div class="trouble-step"
-       id="changing-vocal-level"
-       hidden>
 
-    <p class="eyebrow">TRY THIS FIRST</p>
+<!-- =====================================================
+     VOCAL LEVEL
+     ===================================================== -->
 
-    <h2>Try volume automation.</h2>
+<div class="trouble-step"
+     id="vocal-level-problem"
+     hidden>
 
-    <p>
-      If entire lines or sections are too loud or too quiet,
-      automation lets you correct the level deliberately instead of
-      asking a compressor to solve every change.
-    </p>
+  <p class="eyebrow">VOCALS / LEVEL</p>
 
-    <p>
-      Bring down sections that jump forward.
-      Bring up sections that disappear.
-      Listen again before adding anything else.
-    </p>
+  <h2>
+    What kind of level problem are you hearing?
+  </h2>
 
-    <div class="trouble-tip">
-      <strong>Then consider compression:</strong>
-      Compression can help control shorter level changes and make the
-      performance feel more consistent, but it doesn't replace thoughtful
-      level balance.
-    </div>
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="whole-vocal-level">
+      THE WHOLE VOCAL IS TOO LOUD OR TOO QUIET
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="changing-vocal-level">
+      THE LEVEL CHANGES THROUGHOUT THE SONG
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="word-level-problem">
+      INDIVIDUAL WORDS OR PHRASES JUMP OUT OR DISAPPEAR
+    </button>
 
   </div>
 
+</div>
 
-  <div class="trouble-step"
-       id="word-level-problem"
-       hidden>
 
-    <p class="eyebrow">TRY THIS FIRST</p>
+<div class="trouble-step"
+     id="whole-vocal-level"
+     hidden>
 
-    <h2>Listen for individual problem words.</h2>
+  <p class="eyebrow">TRY THIS FIRST</p>
 
-    <p>
-      If a few words suddenly jump forward or disappear,
-      you may not need to process the entire vocal more heavily.
-    </p>
+  <h2>Adjust the vocal level.</h2>
 
-    <p>
-      Try clip gain or volume automation on the specific problem areas first.
-    </p>
+  <p>
+    If the vocal is consistently too loud or too quiet,
+    start with the simplest fix: change the fader level.
+  </p>
 
-    <div class="trouble-tip">
-      <strong>If it keeps happening:</strong>
-      Gentle compression may help reduce the difference between louder
-      and quieter moments.
-    </div>
+  <p>
+    Compression is not a substitute for simply putting the vocal
+    at the right overall level.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Before turning it up:</strong>
+    Listen for something else masking the vocal.
+    A guitar, keyboard, cymbal, or other element may be able to come down instead.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="changing-vocal-level"
+     hidden>
+
+  <p class="eyebrow">TRY THIS FIRST</p>
+
+  <h2>Try volume automation.</h2>
+
+  <p>
+    If entire lines or sections move noticeably forward and backward,
+    automation gives you direct control over those changes.
+  </p>
+
+  <p>
+    Bring louder sections down and quieter sections up.
+    Then listen again before adding more processing.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then consider compression:</strong>
+    Compression can help control shorter level changes,
+    but it doesn't replace a good overall level balance.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="word-level-problem"
+     hidden>
+
+  <p class="eyebrow">TRY THIS FIRST</p>
+
+  <h2>Fix the problem words directly.</h2>
+
+  <p>
+    If only a few words or phrases jump out or disappear,
+    you may not need to process the entire vocal more heavily.
+  </p>
+
+  <p>
+    Try clip gain or volume automation on those specific areas.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If it happens constantly:</strong>
+    Gentle compression may help reduce the difference
+    between louder and quieter moments.
+  </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     VOCAL BURIED
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="vocal-buried"
+     hidden>
+
+  <p class="eyebrow">VOCALS / BURIED</p>
+
+  <h2>
+    Does the vocal sound loud enough by itself,
+    but disappear when the rest of the mix plays?
+  </h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-masking">
+      YES — IT DISAPPEARS WHEN THE MIX COMES IN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-simply-low">
+      NO — IT JUST SEEMS TOO QUIET
+    </button>
 
   </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-masking"
+     hidden>
+
+  <p class="eyebrow">CHECK FOR MASKING</p>
+
+  <h2>Something else may be competing with the vocal.</h2>
+
+  <p>
+    Instead of immediately turning the vocal up,
+    listen for instruments occupying a similar range.
+  </p>
+
+  <p>
+    Guitars, keys, cymbals, and other midrange-heavy sounds
+    can make a vocal difficult to hear even when the vocal itself is loud enough.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Try:</strong>
+    Lower the competing element slightly, change its arrangement or panning,
+    or make a small EQ adjustment where the conflict is strongest.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-simply-low"
+     hidden>
+
+  <p class="eyebrow">START SIMPLE</p>
+
+  <h2>Bring the vocal up.</h2>
+
+  <p>
+    If the vocal is simply too quiet,
+    moving the fader may be all it needs.
+  </p>
+
+  <p>
+    Don't add compression, saturation, or EQ just to solve
+    a basic level problem.
+  </p>
+
+</div>
+
+
+
+<!-- =====================================================
+     VOCAL HARSH
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="vocal-harsh"
+     hidden>
+
+  <p class="eyebrow">VOCALS / HARSH</p>
+
+  <h2>When does the harshness happen?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-always-harsh">
+      MOST OF THE TIME
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-specific-harsh">
+      ONLY ON CERTAIN WORDS OR NOTES
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-loud-harsh">
+      MOSTLY WHEN THE SINGER GETS LOUD
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-always-harsh"
+     hidden>
+
+  <p class="eyebrow">FIND THE SOURCE</p>
+
+  <h2>Figure out where the harshness lives.</h2>
+
+  <p>
+    Sweep a narrow EQ band temporarily to help identify
+    the frequency range that is bothering you.
+  </p>
+
+  <p>
+    Once you find it, return the EQ to neutral and try a small,
+    broad cut rather than leaving a giant surgical notch.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Also check:</strong>
+    microphone choice, microphone position,
+    distortion or clipping, and any processing already making the top end brighter.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-specific-harsh"
+     hidden>
+
+  <p class="eyebrow">TARGET THE MOMENTS</p>
+
+  <h2>Don't process the entire vocal for a few bad words.</h2>
+
+  <p>
+    If the harshness only appears occasionally,
+    try automation or dynamic EQ on those specific moments.
+  </p>
+
+  <p>
+    A permanent EQ cut may make the rest of the vocal unnecessarily dull.
+  </p>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-loud-harsh"
+     hidden>
+
+  <p class="eyebrow">CHECK THE RECORDING</p>
+
+  <h2>The louder performance may be changing the tone.</h2>
+
+  <p>
+    Check whether the microphone, preamp, interface,
+    or recorded track is clipping when the singer gets louder.
+  </p>
+
+  <p>
+    If the recording itself is clean,
+    dynamic EQ or automation can help control harsh moments
+    without darkening the entire vocal.
+  </p>
+
+</div>
+
+
+
+<!-- =====================================================
+     VOCAL MUDDY / BOXY
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="vocal-muddy"
+     hidden>
+
+  <p class="eyebrow">VOCALS / MUDDY</p>
+
+  <h2>
+    Does the vocal sound muddy by itself,
+    or only when everything else is playing?
+  </h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-muddy-alone">
+      MUDDY BY ITSELF
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-muddy-mix">
+      MOSTLY MUDDY IN THE FULL MIX
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-muddy-alone"
+     hidden>
+
+  <p class="eyebrow">CHECK THE SOURCE FIRST</p>
+
+  <h2>Listen for excessive low-mid energy.</h2>
+
+  <p>
+    Microphone placement, proximity effect, the room,
+    or the microphone itself may be contributing to the problem.
+  </p>
+
+  <p>
+    If you're still recording, try changing the microphone position
+    before reaching for EQ.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If you're already mixing:</strong>
+    Try a small reduction in the troublesome low-mid area.
+    Use your ears rather than automatically cutting a predetermined frequency.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-muddy-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK THE REST OF THE MIX</p>
+
+  <h2>The vocal may not be the actual problem.</h2>
+
+  <p>
+    Guitars, keys, bass, room microphones,
+    and effects can accumulate energy in the same area.
+  </p>
+
+  <p>
+    Bypass or lower competing elements one at a time
+    and see whether the vocal suddenly becomes clearer.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't automatically cut the vocal.</strong>
+    Sometimes removing a little from something else
+    fixes the problem more naturally.
+  </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     VOCAL THIN
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="vocal-thin"
+     hidden>
+
+  <p class="eyebrow">VOCALS / THIN</p>
+
+  <h2>Are you still able to change the recording?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-thin-recording">
+      YES — I'M STILL RECORDING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-thin-mixing">
+      NO — I'M MIXING WHAT I HAVE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-thin-recording"
+     hidden>
+
+  <p class="eyebrow">FIX IT AT THE SOURCE</p>
+
+  <h2>Try changing the microphone position first.</h2>
+
+  <p>
+    Moving closer to many directional microphones can increase low-frequency
+    response, while changing distance and angle can significantly alter the tone.
+  </p>
+
+  <p>
+    Try small position changes and listen before changing equipment
+    or adding processing.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Also consider:</strong>
+    microphone choice, the singer's position,
+    and whether a high-pass filter is removing more low end than you intended.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-thin-mixing"
+     hidden>
+
+  <p class="eyebrow">CHECK WHAT'S MISSING</p>
+
+  <h2>Don't immediately boost a pile of low end.</h2>
+
+  <p>
+    First check for aggressive high-pass filtering,
+    previous EQ cuts, phase issues with layered vocals,
+    or processing that has made the vocal overly bright.
+  </p>
+
+  <p>
+    If the vocal still needs more body,
+    try a gentle tonal adjustment rather than a dramatic boost.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Context matters:</strong>
+    A vocal that sounds slightly thin by itself
+    may sit perfectly once the rest of the arrangement is playing.
+  </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     VOCAL SIBILANCE
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="vocal-sibilance"
+     hidden>
+
+  <p class="eyebrow">VOCALS / SIBILANCE</p>
+
+  <h2>
+    Is the problem mostly S, SH, T, or similar consonants?
+  </h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-deess">
+      YES — THOSE SOUNDS JUMP OUT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="vocal-bright-not-sibilant">
+      NO — THE WHOLE VOCAL JUST SOUNDS TOO BRIGHT
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-deess"
+     hidden>
+
+  <p class="eyebrow">CONTROL THE SIBILANCE</p>
+
+  <h2>Try a de-esser.</h2>
+
+  <p>
+    A de-esser reduces the vocal when excessive energy appears
+    in the sibilant frequency range.
+  </p>
+
+  <p>
+    Set it so the distracting consonants become controlled
+    without making the singer sound dull or unnatural.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>For only a few problem words:</strong>
+    Manual clip gain or automation may sound more natural
+    than processing the entire performance.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="vocal-bright-not-sibilant"
+     hidden>
+
+  <p class="eyebrow">THIS MAY NOT BE SIBILANCE</p>
+
+  <h2>Go back to the harshness branch.</h2>
+
+  <p>
+    If the entire vocal sounds bright or painful rather than
+    only the consonants jumping out, the issue is probably broader than sibilance.
+  </p>
+
+  <p>
+    Check microphone tone, EQ, saturation,
+    distortion, and the upper-mid or high-frequency balance.
+  </p>
+
+</div>
 
 </section>
 

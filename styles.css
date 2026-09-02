@@ -1344,15 +1344,51 @@ footer {
 }
 
 
-.slot-spinning {
-  animation: challenge-spin 0.25s ease;
+/* =========================================================
+   CHALLENGE ROLL ANIMATION
+   ========================================================= */
+
+.challenge-slot {
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease,
+    background 0.15s ease;
 }
 
-@keyframes challenge-spin {
+
+.challenge-slot.rolling {
+  border-color: var(--accent);
+  background: rgba(255,255,255,0.055);
+}
+
+
+.challenge-slot.rolling .slot-result {
+  opacity: 0.65;
+  transform: translateY(2px);
+}
+
+
+.challenge-slot.landed {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+
+.challenge-slot.landed .slot-result {
+  animation: slot-land 0.28s ease;
+}
+
+
+@keyframes slot-land {
 
   0% {
-    opacity: 0;
-    transform: translateY(-8px);
+    opacity: 0.4;
+    transform: translateY(-10px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(3px);
   }
 
   100% {
@@ -1363,83 +1399,8 @@ footer {
 }
 
 
-.challenge-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.secondary-challenge-button {
-  padding: 13px 18px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--text);
-  font: inherit;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-
-.challenge-go {
-  padding: 90px 8%;
-}
-
-.challenge-go p {
-  max-width: 720px;
-  line-height: 1.7;
-  opacity: 0.8;
-}
-
-
-@media (max-width: 800px) {
-
-  .challenge-hero,
-  .challenge-section,
-  .challenge-machine,
-  .challenge-go {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-
-  .challenge-machine-heading {
-    display: block;
-  }
-
-  .spin-button {
-    width: 100%;
-    margin-top: 25px;
-  }
-
-  .challenge-results {
-    grid-template-columns: 1fr 1fr;
-  }
-
-}
-
-
-@media (max-width: 520px) {
-
-  .challenge-results {
-    grid-template-columns: 1fr;
-  }
-
-  .challenge-modes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .mode-button {
-    width: 100%;
-  }
-
-}
-
-.copy-message {
-  min-height: 24px;
-  margin-top: 16px;
-  font-size: 0.8rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  color: var(--accent);
+.spin-button:disabled,
+.secondary-challenge-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

@@ -340,169 +340,386 @@ const challengeData = {
 
   guitar: {
 
-    "TUNING": [
-      "Standard",
-      "Drop D",
-      "D Standard",
-      "Open D",
-      "Open G",
-      "Half-Step Down"
-    ],
+  "TUNING": [
+    "Standard",
+    "Half-Step Down",
+    "D Standard",
+    "C# Standard",
+    "Drop D",
+    "Drop C#",
+    "Drop C",
+    "Open D",
+    "Open E",
+    "Open G",
+    "DADGAD"
+  ],
 
-    "SOUND": [
-      "Clean",
-      "Edge of breakup",
-      "Heavy distortion",
-      "Fuzz",
-      "Washed-out reverb",
-      "Dry",
-      "Delay-heavy"
-    ],
+  "SOUND": [
+    "Completely Clean",
+    "Edge of Breakup",
+    "Crunchy",
+    "Heavy Distortion",
+    "Fuzz",
+    "Way Too Much Fuzz",
+    "Washed-Out Reverb",
+    "Delay-Heavy",
+    "Dry",
+    "Bright and Jangly",
+    "Dark and Warm",
+    "Lo-Fi",
+    "Make It Sound Broken"
+  ],
 
-    "PART": [
-      "Chords only",
-      "Single-note riff",
-      "Arpeggios",
-      "Octaves",
-      "Melody instead of chords",
-      "Alternate between riff and chords"
-    ],
+  "PART": [
+    "Chords Only",
+    "Single-Note Riff",
+    "Arpeggios",
+    "Octaves",
+    "Melody Instead of Chords",
+    "Alternate Between Riff and Chords",
+    "Rhythmic Stabs",
+    "Drone",
+    "Fingerpicked Pattern",
+    "One Repeating Motif",
+    "Countermelody",
+    "Ambient Texture"
+  ],
 
-    "LIMITATION": [
-      "No power chords",
-      "Open strings must be used",
-      "Only three-note chords",
-      "Stay above the 7th fret",
-      "Stay below the 7th fret",
-      "No palm muting",
-      "No pick",
-      "Let every chord ring",
-      "Use one chord shape for the entire part"
-    ]
+  "RHYTHM": [
+    "Straight Eighth Notes",
+    "Syncopated",
+    "Let Everything Ring",
+    "Short and Staccato",
+    "Play Behind the Beat",
+    "Play Aggressively on the Beat",
+    "Leave Huge Gaps",
+    "Constant Motion",
+    "Change Rhythm Every Section"
+  ],
 
-  },
+  "LIMITATION": [
+    "No Power Chords",
+    "Open Strings Must Be Used",
+    "Only Three-Note Chords",
+    "Stay Above the 7th Fret",
+    "Stay Below the 7th Fret",
+    "No Palm Muting",
+    "No Pick",
+    "Let Every Chord Ring",
+    "Use One Chord Shape for the Entire Part",
+    "No Full Chords",
+    "No Bending",
+    "No Vibrato",
+    "Use Only Downstrokes",
+    "Use Only Four Strings",
+    "One String Cannot Be Used",
+    "No Root Notes in the Chords",
+    "Use the Same Riff in Two Different Ways",
+    "Play Fewer Notes Than You Want To",
+    "No Guitar During One Entire Section",
+    "Do Not Double the Part"
+  ],
 
+  "WILD CARD": [
+    "Write the Part Without Distortion First",
+    "Record the First Usable Take",
+    "Use a Pickup You Normally Ignore",
+    "Turn One Pedal Setting Somewhere Stupid",
+    "Play the Part an Octave Higher Than You Planned",
+    "Play the Part an Octave Lower Than You Planned",
+    "Use an Unfamiliar Chord Voicing",
+    "Make the Chorus Guitar Smaller Than the Verse",
+    "The Guitar Cannot Start the Song",
+    "The Guitar Must Start the Song Alone",
+    "Remove One Note From Every Chord",
+    "Make One Mistake Part of the Final Part",
+    "Use Feedback Intentionally",
+    "Make Noise Between Two Sections",
+    "Write Something You Cannot Play Perfectly Yet"
+  ]
+
+},
 
   bass: {
 
-    "PLAYING STYLE": [
-      "Pick",
-      "Fingers",
-      "Either — but commit to one",
-      "Muted / short notes",
-      "Let everything ring"
-    ],
+  "PLAYING STYLE": [
+    "Pick",
+    "Fingers",
+    "Muted / Short Notes",
+    "Let Everything Ring",
+    "Play Aggressively",
+    "Play as Softly as Possible",
+    "Alternate Between Pick and Fingers"
+  ],
 
-    "ROLE": [
-      "Follow the kick",
-      "Avoid the kick",
-      "Root-heavy",
-      "Melodic",
-      "Pedal tone",
-      "Drive the entire song"
-    ],
+  "ROLE": [
+    "Follow the Kick",
+    "Avoid the Kick",
+    "Root-Heavy",
+    "Melodic",
+    "Pedal Tone",
+    "Drive the Entire Song",
+    "Follow the Guitar",
+    "Do the Opposite of the Guitar",
+    "Act Like a Second Melody",
+    "Hold the Arrangement Together While Everyone Else Gets Weird"
+  ],
 
-    "REGISTER": [
-      "Low register",
-      "Upper register",
-      "Move between both",
-      "Stay above the 7th fret"
-    ],
+  "REGISTER": [
+    "Low Register",
+    "Upper Register",
+    "Move Between Both",
+    "Stay Above the 7th Fret",
+    "Stay Below the 5th Fret",
+    "Spend One Entire Section Much Higher Than Normal"
+  ],
 
-    "LIMITATION": [
-      "No note on beat one",
-      "Use octaves heavily",
-      "No root note during the chorus",
-      "Leave more space than feels comfortable",
-      "Play something different under every chord",
-      "Only change notes once per measure"
-    ]
+  "RHYTHM": [
+    "Straight Eighth Notes",
+    "Long Sustained Notes",
+    "Short Staccato Notes",
+    "Syncopated",
+    "Lots of Space",
+    "Constant Motion",
+    "Follow the Vocal Rhythm",
+    "Play Around the Drum Groove"
+  ],
 
-  },
+  "LIMITATION": [
+    "No Note on Beat One",
+    "Use Octaves Heavily",
+    "No Root Note During the Chorus",
+    "Leave More Space Than Feels Comfortable",
+    "Play Something Different Under Every Chord",
+    "Only Change Notes Once Per Measure",
+    "No Fills",
+    "One Note for an Entire Section",
+    "Use Only Three Different Notes in One Section",
+    "Do Not Follow the Guitar Rhythm",
+    "No Bass During the Intro",
+    "No Bass During One Chorus",
+    "The Simplest Possible Part",
+    "Never Play More Than Two Notes in a Row Without a Rest"
+  ],
+
+  "WILD CARD": [
+    "Start the Song Alone",
+    "Enter Later Than Feels Correct",
+    "Take Over the Melody for One Section",
+    "Play One Section an Octave Higher",
+    "Keep the First Usable Take",
+    "Use a Tone You Normally Wouldn't Choose",
+    "Make One Section Bass-Heavy on Purpose",
+    "Remove Half the Notes After Writing the Part",
+    "Write the Part Before Hearing the Guitar",
+    "Let One Note Ring Way Too Long",
+    "End the Song Alone",
+    "Make the Bass the Most Interesting Instrument for One Section"
+  ]
+
+},
 
 
   drums: {
 
-    "FEEL": [
-      "Straight",
-      "Swung",
-      "Half-time",
-      "Double-time",
-      "Loose",
-      "Dead simple"
-    ],
+  "FEEL": [
+    "Straight",
+    "Swung",
+    "Half-Time",
+    "Double-Time",
+    "Loose",
+    "Dead Simple",
+    "Driving",
+    "Laid Back",
+    "Almost Falling Apart",
+    "Mechanical",
+    "Big and Open"
+  ],
 
-    "MAIN VOICE": [
-      "Hi-hat",
-      "Ride",
-      "Floor tom",
-      "Snare",
-      "Kick",
-      "Toms"
-    ],
+  "MAIN VOICE": [
+    "Hi-Hat",
+    "Ride",
+    "Floor Tom",
+    "Snare",
+    "Kick",
+    "Toms",
+    "Cross-Stick",
+    "Crash",
+    "Whatever Makes the Weirdest Sound on the Kit"
+  ],
 
-    "KICK": [
-      "Follow the bass",
-      "Four on the floor",
-      "Sparse",
-      "Syncopated",
-      "Only essential hits"
-    ],
+  "KICK": [
+    "Follow the Bass",
+    "Avoid the Bass",
+    "Four on the Floor",
+    "Sparse",
+    "Syncopated",
+    "Only Essential Hits",
+    "Busy",
+    "Only on Beat One",
+    "Change the Kick Pattern Every Section"
+  ],
 
-    "LIMITATION": [
-      "No crash until the final chorus",
-      "No hi-hat",
-      "No ride",
-      "No fills for the first half",
-      "Only one fill in the entire song",
-      "Use the floor tom as part of the groove",
-      "Keep the same groove through two different sections",
-      "Drop out completely for one section"
-    ]
+  "SNARE": [
+    "Standard Backbeat",
+    "Half-Time",
+    "Cross-Stick",
+    "Sparse",
+    "Busy",
+    "Ghost-Note Heavy",
+    "No Snare During One Section",
+    "Move the Backbeat Somewhere Unexpected"
+  ],
 
-  },
+  "FILLS": [
+    "No Fills",
+    "One Fill in the Entire Song",
+    "Tiny Fills Only",
+    "Huge Fills",
+    "Tom Fills Only",
+    "Snare Fills Only",
+    "Fill Into Every New Section",
+    "Never Play the Same Fill Twice"
+  ],
+
+  "LIMITATION": [
+    "No Crash Until the Final Chorus",
+    "No Hi-Hat",
+    "No Ride",
+    "No Fills for the First Half",
+    "Only One Fill in the Entire Song",
+    "Use the Floor Tom as Part of the Groove",
+    "Keep the Same Groove Through Two Different Sections",
+    "Drop Out Completely for One Section",
+    "No Cymbals During One Section",
+    "No Kick During One Section",
+    "No Snare During One Section",
+    "Use Only Kick, Snare, and Hi-Hat for One Section",
+    "Do Not Play Anything on Beat One",
+    "The Chorus Must Be Simpler Than the Verse",
+    "Never Hit Two Cymbals at the Same Time"
+  ],
+
+  "WILD CARD": [
+    "Start With Drums Alone",
+    "Drums Enter Last",
+    "Stop Completely for One Beat",
+    "Stop Completely for One Full Measure",
+    "Use Something That Isn't Normally Part of the Kit",
+    "Play One Section With Brushes or Mallets If Available",
+    "Make the Quietest Groove the Most Interesting Groove",
+    "Do Not Change the Groove When the Chorus Arrives",
+    "Change the Feel Without Changing Tempo",
+    "Make One Section Sound Like a Different Drummer Took Over",
+    "Keep the First Usable Take",
+    "Make One Imperfect Fill Part of the Final Take",
+    "Remove Something From the Kit Before Recording"
+  ]
+
+},
 
 
   vocals: {
 
-    "DELIVERY": [
-      "Intimate",
-      "Aggressive",
-      "Soft",
-      "Conversational",
-      "Big and melodic",
-      "Almost spoken"
-    ],
+  "DELIVERY": [
+    "Intimate",
+    "Aggressive",
+    "Soft",
+    "Conversational",
+    "Big and Melodic",
+    "Almost Spoken",
+    "Whispered",
+    "Restrained",
+    "Uncomfortably Honest",
+    "Detached",
+    "Way More Dramatic Than Necessary"
+  ],
 
-    "MELODY": [
-      "Narrow range",
-      "Large melodic jumps",
-      "Mostly repeated notes",
-      "Long held notes",
-      "Short phrases",
-      "Melody changes every section"
-    ],
+  "MELODY": [
+    "Narrow Range",
+    "Large Melodic Jumps",
+    "Mostly Repeated Notes",
+    "Long Held Notes",
+    "Short Phrases",
+    "Melody Changes Every Section",
+    "Mostly Descending",
+    "Mostly Ascending",
+    "One Repeating Melodic Motif",
+    "Verse and Chorus Use Similar Notes With Different Rhythm"
+  ],
 
-    "HARMONY": [
-      "No harmonies",
-      "Harmony every chorus",
-      "One harmony only",
-      "Gang vocals",
-      "Call and response",
-      "Double the lead"
-    ],
+  "RHYTHM": [
+    "Lots of Space",
+    "Long Phrases",
+    "Short Phrases",
+    "Enter Before Beat One",
+    "Enter After Beat One",
+    "Follow the Guitar Rhythm",
+    "Avoid the Guitar Rhythm",
+    "Change the Vocal Rhythm Every Section"
+  ],
 
-    "LIMITATION": [
-      "No repeated melody between verse and chorus",
-      "Start the song with vocals",
-      "No vocals for the first 30 seconds",
-      "One section must be a single vocal take",
-      "Leave an uncomfortable amount of space",
-      "Repeat one line until its meaning changes",
-      "The final line must be sung alone"
-    ]
+  "HARMONY": [
+    "No Harmonies",
+    "Harmony Every Chorus",
+    "One Harmony Only",
+    "Gang Vocals",
+    "Call and Response",
+    "Double the Lead",
+    "Harmony Only the Final Line",
+    "One Unexpected High Harmony",
+    "One Unexpected Low Harmony",
+    "Different Harmony Every Chorus"
+  ],
 
-  }
+  "LYRIC": [
+    "Tell a Story",
+    "Write About One Specific Moment",
+    "Never Say Exactly What the Song Is About",
+    "Use One Repeated Line",
+    "No Rhyming",
+    "Heavy Rhyming",
+    "Write in Second Person",
+    "Write in Third Person",
+    "Write About a Place",
+    "Write Around One Physical Object",
+    "Every Line Must Be Short",
+    "One Sentence Becomes the Entire Chorus"
+  ],
+
+  "LIMITATION": [
+    "No Repeated Melody Between Verse and Chorus",
+    "Start the Song With Vocals",
+    "No Vocals for the First 30 Seconds",
+    "One Section Must Be a Single Vocal Take",
+    "Leave an Uncomfortable Amount of Space",
+    "Repeat One Line Until Its Meaning Changes",
+    "The Final Line Must Be Sung Alone",
+    "No Double Tracking",
+    "No Harmony Until the Final Chorus",
+    "No Lyrics During One Section",
+    "Do Not Sing the Highest Note in the Chorus",
+    "The Chorus Gets Quieter Instead of Louder",
+    "One Section Can Contain Only One Lyric"
+  ],
+
+  "WILD CARD": [
+    "Keep the First Usable Take",
+    "Record One Section From Across the Room",
+    "Whisper One Line",
+    "Shout One Line",
+    "Leave One Breath Obviously Audible",
+    "Sing One Section an Octave Away From Your First Instinct",
+    "Remove Half the Lyrics From One Section",
+    "Start Singing Before Any Instrument Plays",
+    "End the Song Without Finishing the Final Thought",
+    "Use a Word You Normally Wouldn't Put in a Song",
+    "Change One Lyric Immediately Before Recording It",
+    "Record One Double Without Listening to the Original",
+    "Make the Most Important Line the Quietest Line"
+  ]
+
+}
 
 };
 

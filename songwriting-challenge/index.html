@@ -465,6 +465,8 @@ const results = document.getElementById("challenge-results");
 const spinButton = document.getElementById("spin-button");
 const rerollButton = document.getElementById("reroll-button");
 const resetButton = document.getElementById("reset-button");
+const copyButton = document.getElementById("copy-button");
+const copyMessage = document.getElementById("copy-message");
 const modeButtons = document.querySelectorAll(".mode-button");
 
 
@@ -585,6 +587,50 @@ modeButtons.forEach(button => {
 
 spinButton.addEventListener("click", spin);
 rerollButton.addEventListener("click", spin);
+copyButton.addEventListener("click", async () => {
+
+  const slots = document.querySelectorAll(".challenge-slot");
+
+  let challengeText =
+    "PECULIAR MEDIA SONGWRITING CHALLENGE\n\n";
+
+  challengeText +=
+    `MODE: ${currentMode.toUpperCase()}\n\n`;
+
+  slots.forEach(slot => {
+
+    const category = slot.dataset.category;
+    const result = slot.querySelector(".slot-result").textContent;
+
+    challengeText += `${category}: ${result}\n`;
+
+  });
+
+  challengeText +=
+    "\nMake music. Have fun. Share what works.\n";
+
+  challengeText +=
+    "peculiarmediaco.com/songwriting-challenge/";
+
+  try {
+
+    await navigator.clipboard.writeText(challengeText);
+
+    copyMessage.textContent =
+      "CHALLENGE COPIED. NOW GO MAKE SOMETHING.";
+
+    setTimeout(() => {
+      copyMessage.textContent = "";
+    }, 3000);
+
+  } catch (error) {
+
+    copyMessage.textContent =
+      "COULDN'T COPY IT. TRY AGAIN.";
+
+  }
+
+});
 
 resetButton.addEventListener("click", () => {
   createSlots();

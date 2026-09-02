@@ -826,31 +826,83 @@ function createSlots() {
 
 }
 
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-function spin() {
+async function spin() {
 
-  const slots = document.querySelectorAll(".challenge-slot");
+  const slots =
+    Array.from(document.querySelectorAll(".challenge-slot"));
 
-  slots.forEach(slot => {
+  spinButton.disabled = true;
+  rerollButton.disabled = true;
+
+  spinButton.textContent = "SPINNING...";
+
+
+  for (const slot of slots) {
 
     const category = slot.dataset.category;
 
     if (lockedSlots.has(category)) {
-      return;
+      continue;
     }
 
-    const display = slot.querySelector(".slot-result");
+    const display =
+      slot.querySelector(".slot-result");
 
-    display.classList.remove("slot-spinning");
+    slot.classList.add("rolling");
 
-    void display.offsetWidth;
 
-    display.classList.add("slot-spinning");
+    /*
+      Rapidly cycle through possible results.
+    */
+
+    for (let i = 0; i < 8; i++) {
+
+      display.textContent =
+        randomItem(challengeData[currentMode][category]);
+
+      await wait(45 + (i * 10));
+
+    }
+
+
+    /*
+      Pick the final result.
+    */
 
     display.textContent =
       randomItem(challengeData[currentMode][category]);
 
-  });
+    slot.classList.remove("rolling");
+    slot.classList.add("landed");
+
+
+    /*
+      Remove landing animation class
+      so it can be used again next spin.
+    */
+
+    setTimeout(() => {
+      slot.classList.remove("landed");
+    }, 300);
+
+
+    /*
+      Tiny pause before next slot starts.
+    */
+
+    await wait(90);
+
+  }
+
+
+  spinButton.disabled = false;
+  rerollButton.disabled = false;
+
+  spinButton.textContent = "SPIN THE CHALLENGE";
 
 }
 

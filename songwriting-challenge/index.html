@@ -199,91 +199,144 @@ const challengeData = {
 
   song: {
 
-    "KEY": [
-      "C Major",
-      "D Major",
-      "E Major",
-      "F Major",
-      "G Major",
-      "A Major",
-      "B♭ Major",
-      "C Minor",
-      "D Minor",
-      "E Minor",
-      "F# Minor",
-      "G Minor",
-      "A Minor",
-      "B Minor"
-    ],
+  "KEY": [
+    "RANDOM_KEY"
+  ],
 
-    "TEMPO": [
-      "72 BPM",
-      "84 BPM",
-      "96 BPM",
-      "108 BPM",
-      "118 BPM",
-      "126 BPM",
-      "137 BPM",
-      "148 BPM",
-      "160 BPM",
-      "176 BPM"
-    ],
+  "TEMPO": [
+    "RANDOM_TEMPO"
+  ],
 
-    "TIME SIGNATURE": [
-      "4/4",
-      "4/4",
-      "4/4",
-      "3/4",
-      "6/8",
-      "5/4",
-      "7/8"
-    ],
+  "TIME SIGNATURE": [
+    "4/4",
+    "4/4",
+    "4/4",
+    "3/4",
+    "6/8",
+    "5/4",
+    "7/8",
+    "12/8"
+  ],
 
-    "STYLE": [
-      "Midwest Emo",
-      "Indie Rock",
-      "Shoegaze",
-      "Punk",
-      "Post-Punk",
-      "Alternative Rock",
-      "Dream Pop",
-      "Garage Rock",
-      "Folk",
-      "Slowcore",
-      "Post-Rock",
-      "Something Heavy"
-    ],
+  "STYLE": [
+    "Midwest Emo",
+    "Indie Rock",
+    "Shoegaze",
+    "Punk",
+    "Post-Punk",
+    "Alternative Rock",
+    "Dream Pop",
+    "Garage Rock",
+    "Folk",
+    "Slowcore",
+    "Post-Rock",
+    "Noise Rock",
+    "Pop Punk",
+    "Emo",
+    "Indie Folk",
+    "Grunge",
+    "Hardcore",
+    "Singer-Songwriter",
+    "Lo-Fi",
+    "Psych Rock",
+    "Something Heavy",
+    "Something Uncomfortably Happy",
+    "Something Unnecessarily Sad"
+  ],
 
-    "STRUCTURE": [
-      "Verse / Chorus / Verse / Chorus",
-      "Verse / Verse / Chorus / Verse / Chorus",
-      "Intro / Verse / Chorus / Verse / Chorus / Outro",
-      "Verse / Pre-Chorus / Chorus / Verse / Pre-Chorus / Chorus",
-      "A / B / A / B",
-      "No repeating sections",
-      "Build continuously from beginning to end"
-    ],
+  "STRUCTURE": [
+    "Verse / Chorus / Verse / Chorus",
+    "Verse / Verse / Chorus / Verse / Chorus",
+    "Intro / Verse / Chorus / Verse / Chorus / Outro",
+    "Verse / Pre-Chorus / Chorus / Verse / Pre-Chorus / Chorus",
+    "Verse / Chorus / Verse / Chorus / Bridge / Chorus",
+    "A / B / A / B",
+    "A / B / C / A",
+    "A / A / B / A",
+    "No repeating sections",
+    "Build continuously from beginning to end",
+    "Start with the chorus",
+    "No traditional chorus",
+    "One long build followed by one short final section",
+    "Two sections only",
+    "Three sections — none can repeat",
+    "Same progression for the entire song"
+  ],
 
-    "WILD CARD": [
-      "No distorted guitars",
-      "No cymbals until the chorus",
-      "Start with the loudest section",
-      "End abruptly",
-      "Include one completely silent beat",
-      "One instrument cannot play during the chorus",
-      "No instrument plays the same part twice",
-      "The bass starts the song",
-      "The drums enter last",
-      "The quietest section comes after the loudest",
-      "Use an instrument you normally ignore",
-      "One section must have only one instrument",
-      "Write the chorus first",
-      "No intro",
-      "The song must end differently than you expected"
-    ]
+  "TIME LIMIT": [
+    "30 Minutes",
+    "1 Hour",
+    "2 Hours",
+    "3 Hours",
+    "One Evening",
+    "One Day",
+    "One Weekend"
+  ],
 
-  },
+  "WILD CARD": [
+    "No distorted guitars",
+    "No clean guitars",
+    "No cymbals until the chorus",
+    "Start with the loudest section",
+    "End abruptly",
+    "Include one completely silent beat",
+    "One instrument cannot play during the chorus",
+    "No instrument plays the same part twice",
+    "The bass starts the song",
+    "The drums enter last",
+    "The vocals enter first",
+    "The quietest section comes immediately after the loudest",
+    "Use an instrument you normally ignore",
+    "One section must have only one instrument",
+    "Write the chorus first",
+    "Write the ending first",
+    "No intro",
+    "No outro",
+    "The song must end differently than it begins",
+    "The first sound must also be the final sound",
+    "One section must be completely dry",
+    "One section must sound ridiculously distant",
+    "No fills during the first half of the song",
+    "The bass cannot play the root during one section",
+    "The guitar cannot play chords during one section",
+    "The drums must completely disappear once",
+    "Change the drum feel without changing tempo",
+    "One section must be half the intensity of the section before it",
+    "One section must be twice as loud as you initially think it should be",
+    "Use a sound recorded somewhere in the room",
+    "Record one part with the worst microphone you own",
+    "Use one accidental noise in the final recording",
+    "Leave one obvious imperfection",
+    "No quantizing",
+    "No copy and paste",
+    "No instrument can play continuously through the entire song",
+    "The chorus gets smaller instead of bigger",
+    "The final chorus cannot repeat the first chorus exactly",
+    "Remove an instrument every time a section repeats",
+    "Add an instrument every time a section repeats",
+    "One instrument may only play one note",
+    "One instrument may only play during transitions",
+    "Use silence as part of the arrangement",
+    "Make one section intentionally uncomfortable",
+    "Change one chord you normally wouldn't change",
+    "Use a chord you don't know the name of",
+    "One section must contain no chords",
+    "Write one part without listening to the others",
+    "Record one part in a single take",
+    "Keep the first usable take of one part",
+    "No solos",
+    "Include a solo that lasts less than 10 seconds",
+    "The loudest instrument cannot be guitar",
+    "The first chorus cannot have drums",
+    "The last section must introduce something completely new",
+    "Use an instrument for something it wasn't designed to do",
+    "One part must be played an octave away from where you'd normally play it",
+    "Make the simplest part the loudest part",
+    "Delete one part you thought the song needed",
+    "If you get stuck, remove something instead of adding something"
+  ]
 
+},
 
   guitar: {
 
@@ -471,7 +524,52 @@ const modeButtons = document.querySelectorAll(".mode-button");
 
 
 function randomItem(array) {
-  return array[Math.floor(Math.random() * array.length)];
+
+  const item =
+    array[Math.floor(Math.random() * array.length)];
+
+
+  if (item === "RANDOM_KEY") {
+
+    const roots = [
+      "C",
+      "C#",
+      "D",
+      "E♭",
+      "E",
+      "F",
+      "F#",
+      "G",
+      "A♭",
+      "A",
+      "B♭",
+      "B"
+    ];
+
+    const qualities = [
+      "Major",
+      "Minor"
+    ];
+
+    return `${roots[Math.floor(Math.random() * roots.length)]} ${
+      qualities[Math.floor(Math.random() * qualities.length)]
+    }`;
+
+  }
+
+
+  if (item === "RANDOM_TEMPO") {
+
+    const bpm =
+      Math.floor(Math.random() * (181 - 65 + 1)) + 65;
+
+    return `${bpm} BPM`;
+
+  }
+
+
+  return item;
+
 }
 
 

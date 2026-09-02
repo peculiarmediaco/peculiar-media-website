@@ -1196,3 +1196,241 @@ footer {
   opacity: 0.28;
   cursor: not-allowed;
 }
+
+/* =========================================================
+   SONGWRITING CHALLENGE
+   ========================================================= */
+
+.challenge-hero {
+  padding: 120px 8% 90px;
+  border-bottom: 1px solid var(--line);
+}
+
+.challenge-hero h1 {
+  margin: 12px 0 28px;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+}
+
+.challenge-intro {
+  max-width: 720px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+
+.challenge-section {
+  padding: 70px 8%;
+  border-bottom: 1px solid var(--line);
+}
+
+.challenge-section h2,
+.challenge-machine h2,
+.challenge-go h2 {
+  margin-top: 8px;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+
+.challenge-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.mode-button {
+  padding: 14px 20px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.mode-button:hover,
+.mode-button.active {
+  background: var(--accent);
+  color: #111;
+  border-color: var(--accent);
+}
+
+
+.challenge-machine {
+  padding: 80px 8%;
+  border-bottom: 1px solid var(--line);
+}
+
+.challenge-machine-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.spin-button {
+  padding: 18px 28px;
+  border: 0;
+  background: var(--accent);
+  color: #111;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+
+.challenge-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+
+.challenge-slot {
+  min-height: 165px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.025);
+}
+
+.slot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.slot-label {
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+}
+
+.slot-result {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  margin-top: 12px;
+  font-size: clamp(1.35rem, 3vw, 2.3rem);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+
+.lock-button {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.challenge-slot.locked {
+  border-color: var(--accent);
+}
+
+.challenge-slot.locked .lock-button {
+  background: var(--accent);
+  color: #111;
+  border-color: var(--accent);
+}
+
+
+.slot-spinning {
+  animation: challenge-spin 0.25s ease;
+}
+
+@keyframes challenge-spin {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+.challenge-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.secondary-challenge-button {
+  padding: 13px 18px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+.challenge-go {
+  padding: 90px 8%;
+}
+
+.challenge-go p {
+  max-width: 720px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+
+@media (max-width: 800px) {
+
+  .challenge-hero,
+  .challenge-section,
+  .challenge-machine,
+  .challenge-go {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .challenge-machine-heading {
+    display: block;
+  }
+
+  .spin-button {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .challenge-results {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .challenge-results {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge-modes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mode-button {
+    width: 100%;
+  }
+
+}

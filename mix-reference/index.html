@@ -13,6 +13,84 @@
   >
 
   <link rel="stylesheet" href="/styles.css">
+
+  <style>
+
+.reference-page {
+  padding-top: 80px;
+}
+
+.reference-container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.reference-hero {
+  padding: 100px 0 90px;
+}
+
+.reference-hero h1 {
+  margin: 12px 0 28px;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+}
+
+.reference-lead {
+  max-width: 760px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.reference-section {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.reference-section h2 {
+  max-width: 900px;
+  margin: 12px 0 24px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.reference-section p {
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+.reference-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 20px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.reference-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+
+  .reference-page {
+    padding-top: 60px;
+  }
+
+  .reference-hero {
+    padding: 70px 0 60px;
+  }
+
+  .reference-section {
+    padding: 60px 0;
+  }
+
+}
+
+</style>
+  
 </head>
 
 <body>
@@ -32,67 +110,72 @@
 </header>
 
 
-<main>
+<main class="reference-page">
 
-  <section class="challenge-hero">
+  <section class="reference-hero">
+    <div class="reference-container">
 
-    <p class="eyebrow">
-      PECULIAR MEDIA MIX REFERENCE LIBRARY
-    </p>
+      <p class="eyebrow">
+        PECULIAR MEDIA MIX REFERENCE LIBRARY
+      </p>
 
-    <h1>
-      THE SHELVES<br>
-      ARE STILL EMPTY.
-    </h1>
+      <h1>
+        THE SHELVES<br>
+        ARE STILL EMPTY.
+      </h1>
 
-    <p class="challenge-intro">
-      I'm building a searchable collection of songs worth pulling up
-      when you're trying to figure out a mix.
-    </p>
+      <p class="reference-lead">
+        I'm building a searchable collection of songs worth pulling up
+        when you're trying to figure out a mix.
+      </p>
 
-    <p class="challenge-intro">
-      Not “this is what your mix should sound like.”
-      Just useful references for different genres, production styles,
-      and problems you're trying to solve.
-    </p>
+      <p class="reference-lead">
+        Not “this is what your mix should sound like.”
+        Just useful references for different genres, production styles,
+        and problems you're trying to solve.
+      </p>
 
+    </div>
   </section>
 
 
-  <section class="challenge-section">
+  <section class="reference-section">
+    <div class="reference-container">
 
-    <p class="eyebrow">
-      COMING SOON
-    </p>
+      <p class="eyebrow">COMING SOON</p>
 
-    <h2>I'm working on it.</h2>
+      <h2>I'm working on it.</h2>
 
-    <p>
-      The goal is to make this more useful than a giant list of songs.
-      Each reference will include what to listen for and why it might
-      be worth comparing against your own mix.
-    </p>
+      <p>
+        The goal is to make this more useful than a giant list of songs.
+        Each reference will include what to listen for and why it might
+        be worth comparing against your own mix.
+      </p>
 
+    </div>
   </section>
 
 
-  <section class="challenge-go">
+  <section class="reference-section">
+    <div class="reference-container">
 
-    <p class="eyebrow">
-      WANT TO HELP?
-    </p>
+      <p class="eyebrow">WANT TO HELP?</p>
 
-    <h2>Want to contribute to this monster project?</h2>
+      <h2>Want to contribute to this monster project?</h2>
 
-    <p>
-      Have a song you constantly use as a mix reference?
-      Send it over, along with what you listen for and why you find it useful.
-    </p>
+      <p>
+        Have a song you constantly use as a mix reference?
+        Send it over, along with what you listen for and why you find it useful.
+      </p>
 
-    <a href="mailto:peculiarmediacompany@gmail.com">
-      SEND A REFERENCE →
-    </a>
+      <a
+        class="reference-button"
+        href="mailto:peculiarmediacompany@gmail.com"
+      >
+        SEND A REFERENCE →
+      </a>
 
+    </div>
   </section>
 
 </main>

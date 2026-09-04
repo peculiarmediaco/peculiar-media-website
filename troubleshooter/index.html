@@ -165,9 +165,11 @@
   DRUMS
 </button>
 
-    <button type="button" disabled>
-      GUITAR
-    </button>
+    <button type="button"
+        class="trouble-choice"
+        data-target="guitar-problems">
+  GUITAR
+</button>
 
     <button type="button" disabled>
       BASS
@@ -1586,6 +1588,670 @@
     The close microphones, overheads, and room microphones all contribute
     to the apparent level of each drum. The fader labeled “SNARE”
     isn't necessarily the only place your snare is coming from.
+  </div>
+
+</div>
+
+  <!-- =====================================================
+     GUITAR
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-problems"
+     hidden>
+
+  <p class="eyebrow">GUITAR</p>
+
+  <h2>What's wrong with the guitar?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-harsh">
+      TOO BRIGHT / HARSH / FIZZY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-muddy">
+      MUDDY / WOOLLY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-thin">
+      THIN / SMALL
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-buried">
+      DISAPPEARS IN THE MIX
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-too-big">
+      TOO BIG / TAKES OVER EVERYTHING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-layers">
+      MULTIPLE GUITARS DON'T WORK TOGETHER
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     GUITAR / HARSH
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-harsh"
+     hidden>
+
+  <p class="eyebrow">GUITAR / HARSH</p>
+
+  <h2>When does it sound harsh?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-harsh-alone">
+      IT'S HARSH EVEN BY ITSELF
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-harsh-mix">
+      MOSTLY WHEN THE FULL MIX PLAYS
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-harsh-distortion">
+      THE DISTORTION / FUZZ SOUNDS FIZZY
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-harsh-alone"
+     hidden>
+
+  <p class="eyebrow">CHECK THE SOURCE</p>
+
+  <h2>Figure out whether the harshness is already in the recording.</h2>
+
+  <p>
+    Bypass any processing you've added and listen to the raw guitar.
+    If the unpleasant tone is already there, start farther upstream.
+  </p>
+
+  <p>
+    If you're still recording, listen to the amp or instrument itself.
+    Then check microphone position, microphone choice, amp settings,
+    pedals, and anything else affecting the sound before it reaches the DAW.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If you're already mixing:</strong>
+    Find the area that's bothering you and make the smallest useful adjustment.
+    Don't automatically remove all the high end just because the guitar sounds bright.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-harsh-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK THE MIX</p>
+
+  <h2>The guitar may not be harsh by itself.</h2>
+
+  <p>
+    Several bright sounds playing together can make the whole mix uncomfortable
+    even when none of them seems especially harsh in solo.
+  </p>
+
+  <p>
+    Temporarily lower or mute other guitars, cymbals, keys, or bright effects
+    and listen for what actually changes.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't fix everything in solo.</strong>
+    Identify which combination creates the problem before deciding
+    which sound needs to change.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-harsh-distortion"
+     hidden>
+
+  <p class="eyebrow">CHECK THE DISTORTION</p>
+
+  <h2>Listen to where the fizz is actually coming from.</h2>
+
+  <p>
+    Distortion changes the harmonic content of the guitar,
+    so the problem may be part of the tone itself rather than something
+    created later in the mix.
+  </p>
+
+  <p>
+    If you can still change the source, compare different gain,
+    amp, pedal, cabinet, or microphone settings before trying to repair it later.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If you're stuck with the recording:</strong>
+    Compare the raw and processed guitar and identify the objectionable area
+    by ear. A small tonal adjustment may be enough.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     GUITAR / MUDDY
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-muddy"
+     hidden>
+
+  <p class="eyebrow">GUITAR / MUDDY</p>
+
+  <h2>Is the guitar muddy alone, or only in the mix?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-muddy-alone">
+      MUDDY BY ITSELF
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-muddy-mix">
+      MOSTLY MUDDY IN THE FULL MIX
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-muddy-alone"
+     hidden>
+
+  <p class="eyebrow">CHECK THE SOURCE</p>
+
+  <h2>Find out where the excess weight is coming from.</h2>
+
+  <p>
+    If you're still recording, check the instrument, amp settings,
+    microphone placement, cabinet, room, and effects before reaching for EQ.
+  </p>
+
+  <p>
+    If you're already mixing, bypass your processing and make sure
+    you haven't created the problem yourself.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then:</strong>
+    If the recording still contains more low or low-mid energy than you need,
+    reduce the problem area by ear rather than automatically using
+    a predetermined guitar EQ curve.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-muddy-mix"
+     hidden>
+
+  <p class="eyebrow">LOOK AROUND THE GUITAR</p>
+
+  <h2>The buildup may belong to the arrangement.</h2>
+
+  <p>
+    Bass, additional guitars, keyboards, vocals, reverbs,
+    and other instruments can accumulate energy in similar ranges.
+  </p>
+
+  <p>
+    Mute or lower elements one at a time and listen for when
+    the mix becomes clearer.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Ask before cutting:</strong>
+    Does the guitar actually need less of something,
+    or is another part occupying space it doesn't need?
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     GUITAR / THIN
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-thin"
+     hidden>
+
+  <p class="eyebrow">GUITAR / THIN</p>
+
+  <h2>Where did the size go?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-thin-recording">
+      THE RAW RECORDING ALREADY SOUNDS THIN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-thin-processing">
+      IT GOT THINNER WHILE I WAS MIXING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-thin-combined">
+      MULTIPLE MICS / TRACKS SOUND THINNER TOGETHER
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-thin-recording"
+     hidden>
+
+  <p class="eyebrow">START UPSTREAM</p>
+
+  <h2>Check the sound before trying to manufacture body with EQ.</h2>
+
+  <p>
+    If you're able to record again, listen to the instrument or amplifier
+    in the room and compare that with what the microphone is capturing.
+  </p>
+
+  <p>
+    Microphone position, microphone choice, amp settings,
+    and the source itself can all change the apparent weight of the guitar.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Move something and listen again.</strong>
+    A recording problem is often easier to solve before it becomes a mixing problem.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-thin-processing"
+     hidden>
+
+  <p class="eyebrow">BACK UP</p>
+
+  <h2>Compare your mix to the raw track.</h2>
+
+  <p>
+    Bypass EQ, filtering, compression, saturation,
+    and other processing one piece at a time.
+  </p>
+
+  <p>
+    If the body returns when something is bypassed,
+    reconsider whether that processor or setting is helping.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Especially check filters and EQ cuts.</strong>
+    It's easy to remove useful information while trying to “clean up” a guitar.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-thin-combined"
+     hidden>
+
+  <p class="eyebrow">CHECK THE RELATIONSHIP</p>
+
+  <h2>Two good sounds don't always make a bigger sound.</h2>
+
+  <p>
+    If multiple microphones or recordings of the same performance
+    sound full individually but thinner when combined,
+    investigate their timing and phase relationship.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Try:</strong>
+    Listen to each source alone and together.
+    Change polarity where appropriate and compare.
+    If you can still record, microphone placement may give you
+    a better relationship at the source.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     GUITAR / BURIED
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-buried"
+     hidden>
+
+  <p class="eyebrow">GUITAR / BURIED</p>
+
+  <h2>Does it disappear only when everything else plays?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-buried-masking">
+      YES — IT SOUNDS FINE ALONE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-buried-level">
+      NO — IT JUST SEEMS TOO QUIET
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-buried-masking"
+     hidden>
+
+  <p class="eyebrow">CHECK FOR MASKING</p>
+
+  <h2>Find out what appears when the guitar disappears.</h2>
+
+  <p>
+    Instead of immediately making the guitar louder,
+    mute or lower likely competitors one at a time.
+  </p>
+
+  <p>
+    Another guitar, keyboard, vocal, cymbal wash,
+    or even effects may be occupying similar space.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Arrangement counts too.</strong>
+    If several instruments are playing dense parts in similar registers,
+    the cleanest solution may be changing what one of them plays.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-buried-level"
+     hidden>
+
+  <p class="eyebrow">START SIMPLE</p>
+
+  <h2>Turn the guitar up.</h2>
+
+  <p>
+    If it is simply too quiet, fix the level first.
+    You don't need an EQ trick to solve a fader problem.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then listen again.</strong>
+    If raising it creates a different problem,
+    you've learned something useful about what it's competing with.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     GUITAR / TOO BIG
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-too-big"
+     hidden>
+
+  <p class="eyebrow">GUITAR / TOO BIG</p>
+
+  <h2>What's taking over?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-too-big-level">
+      THE GUITAR IS JUST TOO LOUD
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-too-big-spectrum">
+      IT SEEMS TO COVER EVERYTHING EVEN WHEN I TURN IT DOWN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-too-big-effects">
+      REVERB / DELAY / EFFECTS ARE EVERYWHERE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-too-big-level"
+     hidden>
+
+  <p class="eyebrow">START WITH LEVEL</p>
+
+  <h2>Turn it down.</h2>
+
+  <p>
+    It sounds obvious because it is.
+    If the guitar is simply dominating the balance,
+    lower it before trying to reshape it with processing.
+  </p>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-too-big-spectrum"
+     hidden>
+
+  <p class="eyebrow">FIND THE CONFLICT</p>
+
+  <h2>The guitar may be occupying more space than the arrangement needs.</h2>
+
+  <p>
+    Listen for where it competes with the vocal, bass,
+    other guitars, keys, or drums.
+  </p>
+
+  <p>
+    Then decide whether the answer belongs in level,
+    arrangement, panning, or tone.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't automatically scoop the guitar.</strong>
+    First figure out what you're trying to make room for.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-too-big-effects"
+     hidden>
+
+  <p class="eyebrow">CHECK THE EFFECTS</p>
+
+  <h2>The guitar may not be what's taking up all that space.</h2>
+
+  <p>
+    Reverb and delay create additional sound around the original guitar.
+    Temporarily mute the effects and listen again.
+  </p>
+
+  <p>
+    If the mix suddenly opens up, rebuild the effects balance
+    from less rather than trying to EQ your way out of too much ambience.
+  </p>
+
+</div>
+
+
+<!-- =====================================================
+     GUITAR / MULTIPLE GUITARS
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="guitar-layers"
+     hidden>
+
+  <p class="eyebrow">GUITAR / MULTIPLE PARTS</p>
+
+  <h2>What's happening when the guitars play together?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-layers-same">
+      THEY ALL SOUND TOO SIMILAR
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-layers-clutter">
+      THE PARTS TURN INTO A WALL OF SOUND
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="guitar-layers-thin">
+      THEY GET THINNER / WEIRDER TOGETHER
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-layers-same"
+     hidden>
+
+  <p class="eyebrow">CREATE CONTRAST</p>
+
+  <h2>Don't ask EQ to create differences that aren't there.</h2>
+
+  <p>
+    If you're still arranging or recording,
+    try changing the part, register, chord voicing, instrument,
+    pickup, amp sound, or playing style.
+  </p>
+
+  <p>
+    Two genuinely different parts are usually easier to separate
+    than two nearly identical parts that have been heavily processed afterward.
+  </p>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-layers-clutter"
+     hidden>
+
+  <p class="eyebrow">CHECK THE ARRANGEMENT</p>
+
+  <h2>Ask whether every guitar needs to be playing that much.</h2>
+
+  <p>
+    Mute one guitar at a time.
+    If the song gets clearer without losing anything important,
+    you may have found the simplest solution.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Try subtraction before separation.</strong>
+    Fewer notes, different registers, different rhythms,
+    or fewer simultaneous parts may solve the problem before EQ or panning does.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="guitar-layers-thin"
+     hidden>
+
+  <p class="eyebrow">CHECK PHASE / TIMING</p>
+
+  <h2>Figure out whether these are separate performances or the same source.</h2>
+
+  <p>
+    If multiple microphones captured the same performance,
+    their timing and phase relationship can change the tone when combined.
+  </p>
+
+  <p>
+    If they are separate performances, small timing and tuning differences
+    are normal and may be part of the sound rather than something that needs fixing.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Listen before correcting.</strong>
+    Don't automatically align every waveform or edit every difference away.
+    First decide whether the combined sound is actually a problem.
   </div>
 
 </div>

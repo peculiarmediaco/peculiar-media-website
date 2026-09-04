@@ -141,7 +141,7 @@
   </section>
 
 
-  <section class="troubleshooter-preview" id="mixing">
+  <section class="troubleshooter-preview" id="mixing" hidden>
 
   <p class="eyebrow">MIXING</p>
 
@@ -4524,7 +4524,7 @@
      RECORDING
      ===================================================== -->
 
-<section class="troubleshooter-preview" id="recording">
+<section class="troubleshooter-preview" id="recording" hidden>
 
   <p class="eyebrow">RECORDING</p>
 
@@ -5026,10 +5026,35 @@ troubleChoices.forEach((button) => {
 const troubleshooterCards = document.querySelectorAll(".troubleshooter-card");
 
 troubleshooterCards.forEach((card) => {
-  card.addEventListener("click", () => {
+  card.addEventListener("click", (event) => {
 
+    const targetId = card.getAttribute("href");
+
+    if (!targetId || !targetId.startsWith("#")) return;
+
+    const targetSection = document.querySelector(targetId);
+
+    // Categories we haven't built yet can keep their normal behavior.
+    if (!targetSection) return;
+
+    event.preventDefault();
+
+    // Close every open decision-tree branch.
     document.querySelectorAll(".trouble-step").forEach((step) => {
       hideBranch(step);
+    });
+
+    // Hide all top-level troubleshooter sections.
+    document.querySelectorAll(".troubleshooter-preview").forEach((section) => {
+      section.hidden = true;
+    });
+
+    // Show only the category that was selected.
+    targetSection.hidden = false;
+
+    targetSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
     });
 
   });

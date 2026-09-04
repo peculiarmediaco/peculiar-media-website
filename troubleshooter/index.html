@@ -159,9 +159,11 @@
       VOCALS
     </button>
 
-    <button type="button" disabled>
-      DRUMS
-    </button>
+    <button type="button"
+        class="trouble-choice"
+        data-target="drums-problems">
+  DRUMS
+</button>
 
     <button type="button" disabled>
       GUITAR
@@ -806,6 +808,59 @@
 
 </section>
 
+  <!-- =====================================================
+     DRUMS
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="drums-problems"
+     hidden>
+
+  <p class="eyebrow">DRUMS</p>
+
+  <h2>What's wrong with the drums?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="drums-kick-weak">
+      KICK SOUNDS WEAK / DISAPPEARS
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="drums-snare-weak">
+      SNARE SOUNDS WEAK / THIN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="drums-muddy">
+      DRUMS SOUND MUDDY / BOOMY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="drums-cymbals-harsh">
+      CYMBALS ARE HARSH / TOO LOUD
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="drums-lifeless">
+      DRUMS SOUND SMALL / LIFELESS
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="drums-dont-fit">
+      DRUMS DON'T FEEL LIKE THEY FIT TOGETHER
+    </button>
+
+  </div>
+
+</div>
 
 <section class="troubleshooter-contribute">
 

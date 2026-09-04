@@ -4520,77 +4520,76 @@
 
 </div>
 
-  <!-- =====================================================
+ <!-- =====================================================
      RECORDING
      ===================================================== -->
 
-<section class="troubleshooter-section">
+<section class="troubleshooter-preview" id="recording">
 
-  <div class="trouble-step"
-       id="recording-problems"
-       hidden>
+  <p class="eyebrow">RECORDING</p>
 
-    <p class="eyebrow">RECORDING</p>
+  <h2>What's going wrong?</h2>
 
-    <h2>What's going wrong?</h2>
+  <p>
+    Start with what you're actually hearing.
+    We'll work backward from there.
+  </p>
 
-    <div class="mix-category-grid">
+  <div class="mix-category-grid">
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-quiet">
-        MY SIGNAL IS TOO QUIET
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-quiet">
+      MY SIGNAL IS TOO QUIET
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-clipping">
-        MY SIGNAL IS CLIPPING / DISTORTING
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-clipping">
+      MY SIGNAL IS CLIPPING / DISTORTING
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-bleed">
-        I'M GETTING TOO MUCH BLEED
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            disabled>
+      I'M GETTING TOO MUCH BLEED
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-noise">
-        THERE'S HUM / BUZZ / NOISE
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            disabled>
+      THERE'S HUM / BUZZ / NOISE
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-multimic">
-        MULTIPLE MICS SOUND WEIRD TOGETHER
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            disabled>
+      MULTIPLE MICS SOUND WEIRD TOGETHER
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-latency">
-        I'M HEARING DELAY / LATENCY
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            disabled>
+      I'M HEARING DELAY / LATENCY
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-source">
-        THE RECORDING SOUNDS NOTHING LIKE THE SOURCE
-      </button>
+    <button type="button"
+            class="trouble-choice"
+            disabled>
+      THE RECORDING SOUNDS NOTHING LIKE THE SOURCE
+    </button>
 
-      <button type="button"
-              class="trouble-choice"
-              data-target="recording-already">
-        I RECORDED IT ALREADY AND SOMETHING IS WRONG
-      </button>
-
-    </div>
+    <button type="button"
+            class="trouble-choice"
+            disabled>
+      I RECORDED IT ALREADY AND SOMETHING IS WRONG
+    </button>
 
   </div>
 
 
   <!-- =====================================================
-       RECORDING / TOO QUIET
+       SIGNAL TOO QUIET
        ===================================================== -->
 
   <div class="trouble-step"
@@ -4623,7 +4622,7 @@
 
       <button type="button"
               class="trouble-choice"
-              data-target="recording-quiet-moregain">
+              data-target="recording-quiet-noisy">
         I KEEP ADDING GAIN AND IT'S GETTING NOISY
       </button>
 
@@ -4716,7 +4715,7 @@
 
 
   <div class="trouble-step"
-       id="recording-quiet-moregain"
+       id="recording-quiet-noisy"
        hidden>
 
     <p class="eyebrow">STOP ADDING GAIN FOR A SECOND</p>
@@ -4735,17 +4734,17 @@
     </p>
 
     <div class="trouble-tip">
-      <strong>Especially check distance.</strong>
-      If you're recording a microphone and the source can safely
-      be closer or louder at the microphone, improving the source-to-mic
-      relationship may be more useful than continually increasing gain.
+      <strong>Especially with microphones:</strong>
+      if the source can safely be louder or closer to the microphone,
+      improving what reaches the mic may be more useful than continually
+      increasing gain.
     </div>
 
   </div>
 
 
   <!-- =====================================================
-       RECORDING / CLIPPING
+       CLIPPING / DISTORTION
        ===================================================== -->
 
   <div class="trouble-step"
@@ -4772,13 +4771,13 @@
 
       <button type="button"
               class="trouble-choice"
-              data-target="recording-clipping-cleanmeters">
+              data-target="recording-clipping-clean">
         IT SOUNDS DISTORTED BUT THE METERS DON'T SHOW CLIPPING
       </button>
 
       <button type="button"
               class="trouble-choice"
-              data-target="recording-clipping-loudonly">
+              data-target="recording-clipping-peaks">
         IT ONLY DISTORTS ON THE LOUDEST HITS / NOTES
       </button>
 
@@ -4791,7 +4790,7 @@
        id="recording-clipping-input"
        hidden>
 
-    <p class="eyebrow">FIX IT BEFORE IT GOES ANY FARTHER</p>
+    <p class="eyebrow">FIX IT WHERE IT HAPPENS</p>
 
     <h2>Reduce the level at or before the clipping stage.</h2>
 
@@ -4801,8 +4800,8 @@
     </p>
 
     <p>
-      Reduce input gain or investigate whether the source is arriving
-      at a level the input wasn't intended to receive.
+      Reduce the level feeding that stage and check whether
+      the source is arriving at the appropriate type of input.
     </p>
 
     <div class="trouble-tip">
@@ -4823,19 +4822,19 @@
     <h2>Find the last clean stage before the DAW.</h2>
 
     <p>
-      If the DAW input is clipping, inspect what is feeding
-      the converter or interface input.
+      Check what is feeding the converter or interface input.
+      Look at output levels, preamp gain, routing,
+      and the input you're using.
     </p>
 
     <p>
-      Check output levels, preamp gain, routing,
-      and whether you're feeding one amplified signal
-      into another stage that doesn't need additional gain.
+      Pay particular attention when one device is already sending
+      a line-level signal into another device with its own preamp.
     </p>
 
     <div class="trouble-tip">
       <strong>Don't fix an input problem with the DAW fader.</strong>
-      The recording can already be clipped before that fader
+      The signal can already be clipped before that fader
       ever gets a chance to change anything.
     </div>
 
@@ -4843,7 +4842,7 @@
 
 
   <div class="trouble-step"
-       id="recording-clipping-cleanmeters"
+       id="recording-clipping-clean"
        hidden>
 
     <p class="eyebrow">IT MAY NOT BE DIGITAL CLIPPING</p>
@@ -4851,42 +4850,42 @@
     <h2>Something earlier in the chain may already be distorting.</h2>
 
     <p>
-      Listen at different points in the signal path if possible.
+      If possible, listen or meter the signal at different points.
       The source itself, a pedal, amplifier, microphone,
-      preamp, mixer, or other device can distort even when
-      the final DAW meter appears safe.
+      preamp, mixer, or another device may be distorting
+      before the signal reaches the DAW.
     </p>
 
     <div class="trouble-tip">
       <strong>Find the first ugly stage.</strong>
-      A clean final meter only tells you the level is safe there.
-      It doesn't prove everything before it was clean.
+      A clean meter at the end of the chain only tells you
+      the level is safe there. It doesn't prove everything before it was clean.
     </div>
 
   </div>
 
 
   <div class="trouble-step"
-       id="recording-clipping-loudonly"
+       id="recording-clipping-peaks"
        hidden>
 
     <p class="eyebrow">LEAVE SOME ROOM</p>
 
-    <h2>The average level may be fine while the peaks are not.</h2>
+    <h2>Check the loudest part of the actual performance.</h2>
 
     <p>
-      Watch what happens during the loudest part of the actual performance,
-      not just during a quiet sound check.
+      The average level may look perfectly fine while short peaks
+      are clipping.
     </p>
 
     <p>
-      Reduce the recording level enough that unexpected louder hits,
-      notes, or phrases have room without clipping.
+      Have the performer play or sing the loudest part you're expecting,
+      then leave enough room for the occasional surprise.
     </p>
 
     <div class="trouble-tip">
-      <strong>You don't need to record every signal right below clipping.</strong>
-      A clean recording with room for peaks is considerably more useful
+      <strong>You don't need to record right below clipping.</strong>
+      A clean recording with room for unexpected peaks is more useful
       than a hotter recording with accidental distortion.
     </div>
 

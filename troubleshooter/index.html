@@ -181,9 +181,11 @@
       KEYS / SYNTH
     </button>
 
-    <button type="button" disabled>
-      FULL MIX
-    </button>
+    <button type="button"
+        class="trouble-choice"
+        data-target="fullmix-problems">
+  FULL MIX
+</button>
 
   </div>
 
@@ -3049,6 +3051,926 @@
   <div class="trouble-tip">
     <strong>If you can't tell what the second track is improving,
     you may not need it.</strong>
+  </div>
+
+</div>
+
+  <!-- =====================================================
+     FULL MIX
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-problems"
+     hidden>
+
+  <p class="eyebrow">FULL MIX</p>
+
+  <h2>What's wrong with the mix?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-muddy">
+      EVERYTHING SOUNDS MUDDY / CROWDED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-harsh">
+      MIX SOUNDS HARSH / FATIGUING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-thin">
+      MIX SOUNDS THIN / SMALL
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-flat">
+      MIX SOUNDS FLAT / LIFELESS
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-translation">
+      SOUNDS GOOD HERE, BAD EVERYWHERE ELSE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-levels">
+      I CAN'T GET THE LEVELS TO FEEL RIGHT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-loud">
+      SOUNDS GOOD QUIET, FALLS APART LOUD
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / MUDDY
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-muddy"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / MUDDY</p>
+
+  <h2>When did the mix become crowded?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-muddy-arrangement">
+      IT'S CROWDED EVEN WITH VERY LITTLE PROCESSING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-muddy-processing">
+      IT GOT WORSE AS I STARTED MIXING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-muddy-section">
+      ONLY CERTAIN PARTS OF THE SONG GET MUDDY
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-muddy-arrangement"
+     hidden>
+
+  <p class="eyebrow">CHECK THE ARRANGEMENT</p>
+
+  <h2>There may simply be too much happening in the same place.</h2>
+
+  <p>
+    Mute instruments one at a time and listen for when the mix becomes clearer.
+    Pay attention to parts playing similar notes, registers, rhythms,
+    or sustained sounds at the same time.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Before reaching for EQ:</strong>
+    Ask whether every part needs to be there,
+    or whether changing an octave, voicing, rhythm,
+    or arrangement would create the space naturally.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-muddy-processing"
+     hidden>
+
+  <p class="eyebrow">BACK UP</p>
+
+  <h2>Find out what made it worse.</h2>
+
+  <p>
+    Bypass processing in stages.
+    Start with mix-bus processing, then buses, effects,
+    and individual tracks.
+  </p>
+
+  <p>
+    You're looking for the point where the mix becomes clearer again.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't add another processor yet.</strong>
+    First identify whether something you've already added
+    created or exaggerated the problem.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-muddy-section"
+     hidden>
+
+  <p class="eyebrow">CHECK WHAT CHANGES</p>
+
+  <h2>What enters the arrangement when the mud appears?</h2>
+
+  <p>
+    Compare a clear section with a muddy section.
+    Look for new instruments, doubled parts, effects,
+    denser performances, or changes in level.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If the problem only happens sometimes:</strong>
+    you may not need a permanent fix.
+    Automation or an arrangement change may solve the specific section
+    without changing the entire mix.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / HARSH
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-harsh"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / HARSH</p>
+
+  <h2>Can you identify where the discomfort comes from?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-harsh-source">
+      ONE INSTRUMENT SEEMS TO CAUSE IT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-harsh-combination">
+      NOTHING SOUNDS TERRIBLE ALONE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-harsh-processing">
+      THE MIX GOT BRIGHTER / HARSHER AS I PROCESSED IT
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-harsh-source"
+     hidden>
+
+  <p class="eyebrow">ISOLATE IT</p>
+
+  <h2>Make sure you've actually found the source.</h2>
+
+  <p>
+    Lower or mute the suspected instrument and listen to the full mix again.
+    If the harshness disappears with it, you've narrowed the problem.
+  </p>
+
+  <p>
+    Now check the raw recording against the processed version
+    to find out whether the tone came from the source or the mix.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then fix that source.</strong>
+    Don't darken the entire mix to solve one harsh instrument.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-harsh-combination"
+     hidden>
+
+  <p class="eyebrow">CHECK THE COMBINATION</p>
+
+  <h2>Several reasonable sounds can add up to too much.</h2>
+
+  <p>
+    Cymbals, guitars, vocals, keys, distortion,
+    and effects may all contribute energy in similar areas.
+  </p>
+
+  <p>
+    Lower groups of sounds and listen for when the mix becomes easier to hear.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Think accumulation.</strong>
+    The answer may be several small changes rather than
+    one enormous EQ cut somewhere.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-harsh-processing"
+     hidden>
+
+  <p class="eyebrow">CHECK WHAT YOU ADDED</p>
+
+  <h2>Compare the processed mix with where you started.</h2>
+
+  <p>
+    Bypass EQ, saturation, compression, limiting,
+    exciters, and other processing in stages.
+  </p>
+
+  <p>
+    If the mix becomes easier to listen to when something is bypassed,
+    investigate that processor before adding another one to compensate for it.
+  </p>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / THIN
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-thin"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / THIN</p>
+
+  <h2>Was the mix always thin?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-thin-start">
+      YES — EVEN THE ROUGH BALANCE SOUNDS SMALL
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-thin-processing">
+      NO — IT GOT THINNER WHILE I MIXED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-thin-lowend">
+      THE MIX MOSTLY LACKS WEIGHT / LOW END
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-thin-start"
+     hidden>
+
+  <p class="eyebrow">LOOK UPSTREAM</p>
+
+  <h2>The mix may be reflecting the recording and arrangement.</h2>
+
+  <p>
+    Before trying to make everything bigger,
+    listen to the individual sources and the arrangement.
+  </p>
+
+  <p>
+    Ask whether the performances, tones, instrumentation,
+    and recordings actually contain the size you're expecting.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Mixing can shape what was recorded.</strong>
+    It can't always manufacture an arrangement or performance
+    that was never there.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-thin-processing"
+     hidden>
+
+  <p class="eyebrow">YOU MAY HAVE CLEANED TOO MUCH</p>
+
+  <h2>Start putting things back.</h2>
+
+  <p>
+    Compare the current mix with an earlier rough balance
+    or bypass processing in stages.
+  </p>
+
+  <p>
+    Pay particular attention to filters, broad EQ cuts,
+    aggressive dynamics processing, and anything applied repeatedly
+    across many tracks.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>“Cleaner” isn't automatically better.</strong>
+    You may have removed information that was helping the mix feel substantial.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-thin-lowend"
+     hidden>
+
+  <p class="eyebrow">CHECK THE FOUNDATION</p>
+
+  <h2>Listen to the bass and kick before changing the whole mix.</h2>
+
+  <p>
+    Mute everything except the low-frequency foundation
+    and listen to its balance.
+  </p>
+
+  <p>
+    Then add the rest of the arrangement back gradually.
+    You may discover that the low end isn't missing —
+    it's being masked or overwhelmed.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Also check another playback system.</strong>
+    Don't make large low-frequency decisions based on one room
+    or one pair of speakers if you don't trust them yet.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / FLAT
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-flat"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / FLAT</p>
+
+  <h2>What does “lifeless” mean here?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-flat-dynamics">
+      EVERYTHING FEELS THE SAME VOLUME
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-flat-space">
+      NOTHING FEELS CLOSE OR FAR AWAY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-flat-arrangement">
+      THE SONG ITSELF DOESN'T SEEM TO BUILD
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-flat-processing">
+      IT HAD MORE ENERGY BEFORE I MIXED IT
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-flat-dynamics"
+     hidden>
+
+  <p class="eyebrow">CHECK THE MOVEMENT</p>
+
+  <h2>Not everything needs to stay equally loud.</h2>
+
+  <p>
+    Compare verses, choruses, transitions, and important moments.
+    Look at your automation and dynamics processing.
+  </p>
+
+  <p>
+    If you've worked hard to make everything consistently audible,
+    you may also have reduced some of the contrast that made the song move.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Try subtraction:</strong>
+    instead of making the big moments bigger,
+    see whether the quieter moments can actually be quieter.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-flat-space"
+     hidden>
+
+  <p class="eyebrow">CHECK DEPTH</p>
+
+  <h2>Listen to what feels near and what feels far away.</h2>
+
+  <p>
+    Level, ambience, tone, performance, and stereo placement
+    all contribute to perceived depth.
+  </p>
+
+  <p>
+    If every element has similar level and ambience,
+    the mix may have very little front-to-back contrast.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't start by adding reverb to everything.</strong>
+    First decide which sounds should feel close
+    and which should feel farther away.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-flat-arrangement"
+     hidden>
+
+  <p class="eyebrow">THIS MAY NOT BE A MIX PROBLEM</p>
+
+  <h2>Listen to the arrangement before trying to automate excitement into it.</h2>
+
+  <p>
+    Compare sections and ask what actually changes:
+    instrumentation, register, rhythm, density, performance,
+    harmony, or intensity.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If nothing changes, that's useful information.</strong>
+    The solution may belong in the arrangement rather than the mix.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-flat-processing"
+     hidden>
+
+  <p class="eyebrow">BACK UP</p>
+
+  <h2>Find where the energy disappeared.</h2>
+
+  <p>
+    Compare against your rough mix and bypass processing in stages.
+    Listen especially to dynamics processing on buses and the mix bus.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>The rough mix is evidence.</strong>
+    If it makes you move and the processed version doesn't,
+    don't assume the processed version is automatically more correct.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / TRANSLATION
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-translation"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / TRANSLATION</p>
+
+  <h2>What changes when you listen somewhere else?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-translation-low">
+      THE LOW END IS COMPLETELY DIFFERENT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-translation-vocal">
+      VOCALS / IMPORTANT PARTS CHANGE LEVEL
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-translation-tone">
+      THE WHOLE MIX GETS TOO BRIGHT / DARK / MUDDY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-translation-everything">
+      BASICALLY EVERYTHING CHANGES
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-translation-low"
+     hidden>
+
+  <p class="eyebrow">QUESTION YOUR MONITORING</p>
+
+  <h2>Compare before changing the mix.</h2>
+
+  <p>
+    Low-frequency reproduction varies greatly between rooms,
+    speakers, headphones, cars, and small playback systems.
+  </p>
+
+  <p>
+    Compare several systems and look for a pattern.
+    Don't chase every individual playback system independently.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If your mixing room is consistently the odd one out:</strong>
+    investigate speaker placement, listening position,
+    room behavior, and monitoring before repeatedly compensating in your mixes.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-translation-vocal"
+     hidden>
+
+  <p class="eyebrow">CHECK WHAT DEFINES THE PART</p>
+
+  <h2>Why is the vocal easy to hear on one system and difficult on another?</h2>
+
+  <p>
+    Compare level, masking, ambience, and the tonal information
+    that makes the vocal understandable.
+  </p>
+
+  <p>
+    Then compare what surrounding instruments are doing
+    on the playback system where the vocal disappears.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Look for a pattern across systems.</strong>
+    One strange speaker is an anecdote.
+    The same problem on several systems is useful evidence.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-translation-tone"
+     hidden>
+
+  <p class="eyebrow">LOOK FOR THE PATTERN</p>
+
+  <h2>Is the same tonal problem following the mix everywhere?</h2>
+
+  <p>
+    Compare several familiar playback systems
+    and a few well-known reference recordings.
+  </p>
+
+  <p>
+    If your mix consistently sounds brighter, darker,
+    or muddier than references across several systems,
+    the issue is more likely to belong to the mix.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If the problem only exists in your room:</strong>
+    investigate the room before “correcting” the mix for it.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-translation-everything"
+     hidden>
+
+  <p class="eyebrow">STOP CHASING SPEAKERS</p>
+
+  <h2>Establish a monitoring reference you can trust.</h2>
+
+  <p>
+    Listen to several commercial recordings you know well
+    through the same monitoring setup.
+  </p>
+
+  <p>
+    Then compare your mix at a similar listening level.
+    You're trying to learn what your room and speakers do
+    to recordings that you already know translate well.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Translation is learned comparatively.</strong>
+    The goal isn't for every speaker to sound identical.
+    It's for the important parts of your mix to survive the trip.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / LEVELS
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-levels"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / LEVELS</p>
+
+  <h2>What keeps happening?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-levels-chasing">
+      I KEEP TURNING EVERYTHING UP
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-levels-changing">
+      THE RIGHT BALANCE CHANGES THROUGHOUT THE SONG
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-levels-dense">
+      EVERYTHING FEELS LIKE IT NEEDS TO BE HEARD AT ONCE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-levels-chasing"
+     hidden>
+
+  <p class="eyebrow">RESET THE BALANCE</p>
+
+  <h2>Stop the fader arms race.</h2>
+
+  <p>
+    If every quiet instrument gets turned up,
+    eventually everything is loud and nothing is actually clearer.
+  </p>
+
+  <p>
+    Pull things back and rebuild the balance around
+    the most important elements of the song.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>When something disappears, ask why.</strong>
+    “Turn it up” is one answer.
+    It isn't automatically the right one.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-levels-changing"
+     hidden>
+
+  <p class="eyebrow">THE SONG CHANGES</p>
+
+  <h2>Your faders are allowed to change too.</h2>
+
+  <p>
+    A balance that works in a sparse verse may not work
+    when the chorus adds guitars, cymbals, vocals, or other layers.
+  </p>
+
+  <p>
+    Use automation when the correct level genuinely changes
+    from one part of the song to another.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't force one static setting to solve a moving problem.</strong>
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-levels-dense"
+     hidden>
+
+  <p class="eyebrow">DECIDE WHAT MATTERS</p>
+
+  <h2>Not everything has to be equally obvious.</h2>
+
+  <p>
+    Decide what the listener should notice first,
+    what supports it, and what can sit farther back.
+  </p>
+
+  <p>
+    If every part truly needs constant attention,
+    revisit the arrangement as well as the mix.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>A mix is a hierarchy, not a roll call.</strong>
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     FULL MIX / LOUD
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="fullmix-loud"
+     hidden>
+
+  <p class="eyebrow">FULL MIX / LOUD PLAYBACK</p>
+
+  <h2>What falls apart when you turn it up?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-loud-harsh">
+      IT BECOMES PAINFUL / HARSH
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-loud-low">
+      THE LOW END TAKES OVER
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="fullmix-loud-balance">
+      THE BALANCE FEELS COMPLETELY DIFFERENT
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-loud-harsh"
+     hidden>
+
+  <p class="eyebrow">CHECK AT A SENSIBLE LEVEL</p>
+
+  <h2>Louder playback changes how you perceive the mix.</h2>
+
+  <p>
+    Compare the problem at moderate volume
+    rather than making decisions while listening extremely loud.
+  </p>
+
+  <p>
+    If particular instruments or frequency areas still become uncomfortable
+    across several systems, investigate those sources specifically.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>And protect your ears.</strong>
+    Louder isn't a more accurate setting just because problems become obvious there.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-loud-low"
+     hidden>
+
+  <p class="eyebrow">CHECK THE FOUNDATION</p>
+
+  <h2>Find out whether the bass, kick, or room is responsible.</h2>
+
+  <p>
+    Lower the bass and kick independently and listen for which change
+    actually improves the balance.
+  </p>
+
+  <p>
+    Compare another playback system too,
+    especially if the problem is strongest in your mixing room.
+  </p>
+
+</div>
+
+
+<div class="trouble-step"
+     id="fullmix-loud-balance"
+     hidden>
+
+  <p class="eyebrow">COMPARE, DON'T PANIC</p>
+
+  <h2>Some change with playback level is normal.</h2>
+
+  <p>
+    Human hearing does not respond to all frequencies equally
+    at every listening level.
+  </p>
+
+  <p>
+    Make your important balance decisions at a consistent,
+    comfortable monitoring level and use louder and quieter checks
+    as additional information.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Useful check:</strong>
+    Turn the mix very quiet too.
+    What remains obvious when the overall level drops?
   </div>
 
 </div>

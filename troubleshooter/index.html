@@ -843,6 +843,34 @@
 
 const troubleChoices = document.querySelectorAll(".trouble-choice");
 
+
+/*
+  Hide a step AND anything that can be opened beneath it.
+*/
+
+function hideBranch(step) {
+
+  if (!step) return;
+
+  const childChoices =
+    step.querySelectorAll(".trouble-choice");
+
+  childChoices.forEach((choice) => {
+
+    const childId = choice.dataset.target;
+    const childStep = document.getElementById(childId);
+
+    if (childStep) {
+      hideBranch(childStep);
+    }
+
+  });
+
+  step.hidden = true;
+
+}
+
+
 troubleChoices.forEach((button) => {
 
   button.addEventListener("click", () => {
@@ -852,33 +880,51 @@ troubleChoices.forEach((button) => {
 
     if (!target) return;
 
+
     /*
-      If this button is inside a trouble step,
-      hide any other answer steps that belong to the same level.
+      Find the decision point this button belongs to.
     */
+
     const currentStep = button.closest(".trouble-step");
+
+
+    /*
+      Hide every OTHER branch available from this
+      decision point, including all of its descendants.
+    */
 
     if (currentStep) {
 
-      const answerIds = Array.from(
-        currentStep.querySelectorAll(".trouble-choice")
-      )
-      .map(choice => choice.dataset.target)
-      .filter(Boolean);
+      const siblingChoices =
+        currentStep.querySelectorAll(":scope > .mix-category-grid > .trouble-choice");
 
-      answerIds.forEach((id) => {
+      siblingChoices.forEach((choice) => {
 
-        const section = document.getElementById(id);
+        const siblingId = choice.dataset.target;
+        const siblingStep = document.getElementById(siblingId);
 
-        if (section && section !== target) {
-          section.hidden = true;
+        if (
+          siblingStep &&
+          siblingStep !== target
+        ) {
+          hideBranch(siblingStep);
         }
 
       });
 
     }
 
+
+    /*
+      Show the selected branch.
+    */
+
     target.hidden = false;
+
+
+    /*
+      Move the selected step into view.
+    */
 
     target.scrollIntoView({
       behavior: "smooth",

@@ -2294,15 +2294,14 @@ const troubleChoices = document.querySelectorAll(".trouble-choice");
 
 
 /*
-  Hide a step AND anything that can be opened beneath it.
+  Hide a step AND everything that can be opened beneath it.
 */
 
 function hideBranch(step) {
 
   if (!step) return;
 
-  const childChoices =
-    step.querySelectorAll(".trouble-choice");
+  const childChoices = step.querySelectorAll(".trouble-choice");
 
   childChoices.forEach((choice) => {
 
@@ -2316,6 +2315,30 @@ function hideBranch(step) {
   });
 
   step.hidden = true;
+}
+
+
+/*
+  Hide all of the branches opened by buttons inside a grid,
+  except for the branch we are about to open.
+*/
+
+function hideOtherBranches(grid, target) {
+
+  if (!grid) return;
+
+  const choices = grid.querySelectorAll(":scope > .trouble-choice");
+
+  choices.forEach((choice) => {
+
+    const branchId = choice.dataset.target;
+    const branch = document.getElementById(branchId);
+
+    if (branch && branch !== target) {
+      hideBranch(branch);
+    }
+
+  });
 
 }
 
@@ -2331,37 +2354,16 @@ troubleChoices.forEach((button) => {
 
 
     /*
-      Find the decision point this button belongs to.
+      Every set of choices lives inside a mix-category-grid.
+
+      This now works for BOTH:
+      - main categories like Vocals / Drums / Guitar
+      - decisions deeper inside each tree
     */
 
-    const currentStep = button.closest(".trouble-step");
+    const currentGrid = button.closest(".mix-category-grid");
 
-
-    /*
-      Hide every OTHER branch available from this
-      decision point, including all of its descendants.
-    */
-
-    if (currentStep) {
-
-      const siblingChoices =
-        currentStep.querySelectorAll(":scope > .mix-category-grid > .trouble-choice");
-
-      siblingChoices.forEach((choice) => {
-
-        const siblingId = choice.dataset.target;
-        const siblingStep = document.getElementById(siblingId);
-
-        if (
-          siblingStep &&
-          siblingStep !== target
-        ) {
-          hideBranch(siblingStep);
-        }
-
-      });
-
-    }
+    hideOtherBranches(currentGrid, target);
 
 
     /*

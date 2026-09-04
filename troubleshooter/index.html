@@ -4550,40 +4550,40 @@
     </button>
 
     <button type="button"
-            class="trouble-choice"
-            disabled>
-      I'M GETTING TOO MUCH BLEED
-    </button>
+        class="trouble-choice"
+        data-target="recording-bleed">
+  I'M GETTING TOO MUCH BLEED
+</button>
 
-    <button type="button"
-            class="trouble-choice"
-            disabled>
-      THERE'S HUM / BUZZ / NOISE
-    </button>
+<button type="button"
+        class="trouble-choice"
+        data-target="recording-noise">
+  THERE'S HUM / BUZZ / NOISE
+</button>
 
-    <button type="button"
-            class="trouble-choice"
-            disabled>
-      MULTIPLE MICS SOUND WEIRD TOGETHER
-    </button>
+<button type="button"
+        class="trouble-choice"
+        data-target="recording-multimic">
+  MULTIPLE MICS SOUND WEIRD TOGETHER
+</button>
 
-    <button type="button"
-            class="trouble-choice"
-            disabled>
-      I'M HEARING DELAY / LATENCY
-    </button>
+<button type="button"
+        class="trouble-choice"
+        data-target="recording-latency">
+  I'M HEARING DELAY / LATENCY
+</button>
 
-    <button type="button"
-            class="trouble-choice"
-            disabled>
-      THE RECORDING SOUNDS NOTHING LIKE THE SOURCE
-    </button>
+<button type="button"
+        class="trouble-choice"
+        data-target="recording-source">
+  THE RECORDING SOUNDS NOTHING LIKE THE SOURCE
+</button>
 
-    <button type="button"
-            class="trouble-choice"
-            disabled>
-      I RECORDED IT ALREADY AND SOMETHING IS WRONG
-    </button>
+<button type="button"
+        class="trouble-choice"
+        data-target="recording-already">
+  I RECORDED IT ALREADY AND SOMETHING IS WRONG
+</button>
 
   </div>
 
@@ -4890,6 +4890,825 @@
     </div>
 
   </div>
+
+  <!-- =====================================================
+     TOO MUCH BLEED
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="recording-bleed"
+     hidden>
+
+  <p class="eyebrow">RECORDING / BLEED</p>
+  <h2>What is the bleed actually causing?</h2>
+
+  <p>
+    Hearing another source in a microphone is not automatically a problem.
+    First figure out what the bleed is preventing you from doing.
+  </p>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-bleed-too-much">
+      THERE'S JUST TOO MUCH OF ANOTHER SOURCE IN THE MIC
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-bleed-processing">
+      EQ / COMPRESSION MAKES THE BLEED WORSE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-bleed-weird">
+      THE BLEED SOUNDS WEIRD / PHASEY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-bleed-separation">
+      I NEED MORE SEPARATION BETWEEN SOURCES
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-bleed-recorded">
+      IT'S ALREADY RECORDED
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-bleed-too-much"
+     hidden>
+
+  <p class="eyebrow">CHANGE THE RELATIONSHIP</p>
+  <h2>Work on what the microphone hears before trying to remove it later.</h2>
+
+  <p>
+    Listen to the wanted source and the unwanted source separately.
+    Then experiment with their physical relationship to the microphone.
+  </p>
+
+  <p>
+    Try changing microphone distance and orientation,
+    moving the sources farther apart,
+    changing their relative playing levels,
+    or using available physical separation.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Perform a small experiment.</strong>
+    Move or rotate one thing, record again, and compare.
+    If the bleed improves without hurting the wanted sound,
+    you've learned something useful.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-bleed-processing"
+     hidden>
+
+  <p class="eyebrow">LISTEN IN CONTEXT</p>
+  <h2>The processing may be changing more than the source you wanted to change.</h2>
+
+  <p>
+    A microphone containing multiple sources does not give your processor
+    a clean way to know which sound you care about.
+  </p>
+
+  <p>
+    Compression can make quieter bleed more noticeable.
+    EQ changes anything in that frequency range,
+    including the unwanted sound.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Try less first.</strong>
+    Bypass the processing and listen to the microphones together.
+    Then add processing back while paying attention to what happens
+    to both the wanted sound and the bleed.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-bleed-weird"
+     hidden>
+
+  <p class="eyebrow">CHECK THE MICS TOGETHER</p>
+  <h2>The problem may be the relationship between microphones.</h2>
+
+  <p>
+    The same source can reach different microphones at different times.
+    When those signals are combined, their relationship can change
+    the tone in ways that sound hollow, thin, comb-filtered, or just strange.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Test it.</strong>
+    Listen to one mic alone, then add the other.
+    If the sound changes dramatically when they are combined,
+    investigate microphone placement, distance, polarity,
+    and which microphones actually need to be in the mix.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-bleed-separation"
+     hidden>
+
+  <p class="eyebrow">SEPARATION STARTS IN THE ROOM</p>
+  <h2>Change what reaches the microphone.</h2>
+
+  <p>
+    Try source placement, microphone placement and orientation,
+    distance, relative performance levels, gobos or other useful barriers,
+    and different microphone pickup patterns when appropriate.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't chase isolation just because you can.</strong>
+    The goal is enough separation to make the recording work,
+    not necessarily perfectly isolated tracks.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-bleed-recorded"
+     hidden>
+
+  <p class="eyebrow">WORK WITH WHAT YOU HAVE</p>
+  <h2>Decide whether the bleed actually needs fixing.</h2>
+
+  <p>
+    Listen to the full recording before attacking individual tracks.
+    Bleed that sounds ugly in solo may disappear into the complete performance
+    or even help the tracks feel connected.
+  </p>
+
+  <p>
+    If it really is causing a problem,
+    experiment with editing, automation, gating or expansion,
+    and less aggressive processing on the affected track.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Judge the result, not the solo button.</strong>
+    Remove or reduce bleed because it hurts the recording,
+    not simply because you can hear it.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     HUM / BUZZ / NOISE
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="recording-noise"
+     hidden>
+
+  <p class="eyebrow">RECORDING / NOISE</p>
+  <h2>When does the noise appear?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-noise-one">
+      ONLY ONE CHANNEL HAS IT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-noise-many">
+      MULTIPLE CHANNELS HAVE IT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-noise-gain">
+      IT GETS WORSE WHEN I ADD GAIN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-noise-device">
+      IT APPEARS WHEN I CONNECT A CERTAIN DEVICE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-noise-one"
+     hidden>
+
+  <p class="eyebrow">ISOLATE THAT PATH</p>
+  <h2>One noisy channel gives you somewhere to start.</h2>
+
+  <p>
+    Swap one thing at a time with a known-good equivalent:
+    cable, microphone or source, input, and any device in between.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>One change at a time.</strong>
+    If you replace three things and the noise disappears,
+    you still don't know which one caused it.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-noise-many"
+     hidden>
+
+  <p class="eyebrow">LOOK FOR WHAT THEY SHARE</p>
+  <h2>Multiple noisy channels may have a common point.</h2>
+
+  <p>
+    Look for shared equipment, power, routing,
+    interface connections, computer connections,
+    or another common part of the signal path.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Ask what the noisy channels have in common.</strong>
+    A shared problem is often more useful evidence
+    than treating every channel separately.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-noise-gain"
+     hidden>
+
+  <p class="eyebrow">FIND THE NOISE SOURCE</p>
+  <h2>More gain may simply be making existing noise easier to hear.</h2>
+
+  <p>
+    Check the source level and microphone placement first.
+    Then isolate devices in the chain to determine where the unwanted sound enters.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't diagnose by knob position alone.</strong>
+    What matters is the relationship between the wanted signal
+    and the unwanted noise reaching the recording.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-noise-device"
+     hidden>
+
+  <p class="eyebrow">YOU FOUND A CLUE</p>
+  <h2>If connecting one device creates the noise, investigate that connection.</h2>
+
+  <p>
+    Try removing other connections from that device,
+    changing the signal connection,
+    checking its power arrangement,
+    and substituting known-good cables where possible.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't defeat protective grounding as a troubleshooting shortcut.</strong>
+    Isolate the cause using signal connections and proper equipment
+    rather than modifying mains safety connections.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     MULTIPLE MICS SOUND WEIRD
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="recording-multimic"
+     hidden>
+
+  <p class="eyebrow">RECORDING / MULTIPLE MICS</p>
+  <h2>Does each mic sound okay by itself?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-multimic-combined">
+      YES — IT ONLY SOUNDS WEIRD WHEN THEY'RE COMBINED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-multimic-onebad">
+      NO — ONE MIC ALREADY SOUNDS WRONG
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-multimic-stereo">
+      THE STEREO IMAGE FEELS STRANGE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-multimic-combined"
+     hidden>
+
+  <p class="eyebrow">COMPARE ALONE VS TOGETHER</p>
+  <h2>Investigate the timing relationship between the microphones.</h2>
+
+  <p>
+    When multiple microphones capture the same source,
+    differences in arrival time can change the combined frequency response.
+  </p>
+
+  <p>
+    Try moving a microphone and recording another short test.
+    Also test polarity reversal if your equipment provides it.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Use your ears, not a rule.</strong>
+    Change one variable and compare.
+    You're looking for the relationship that best serves the recording.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-multimic-onebad"
+     hidden>
+
+  <p class="eyebrow">FIX THE INDIVIDUAL MIC FIRST</p>
+  <h2>Don't diagnose a multi-mic problem until both signals work alone.</h2>
+
+  <p>
+    Check that microphone's placement, orientation,
+    input path, cable, gain, and source relationship.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Simplify the problem.</strong>
+    Get each individual signal somewhere useful first.
+    Then judge what happens when they are combined.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-multimic-stereo"
+     hidden>
+
+  <p class="eyebrow">CHECK MONO</p>
+  <h2>Listen to what happens when left and right are combined.</h2>
+
+  <p>
+    A stereo recording can sound wide and exciting
+    while hiding relationships that become obvious in mono.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Compare stereo and mono.</strong>
+    If important parts of the sound become dramatically thinner
+    or disappear, investigate microphone placement and timing
+    before reaching for processing.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     LATENCY
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="recording-latency"
+     hidden>
+
+  <p class="eyebrow">RECORDING / LATENCY</p>
+  <h2>Where are you hearing the delay?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-latency-monitor">
+      WHILE I'M RECORDING / MONITORING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-latency-double">
+      I HEAR A WEIRD DOUBLE / ECHO
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-latency-playback">
+      THE RECORDED TRACK PLAYS BACK LATE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-latency-monitor"
+     hidden>
+
+  <p class="eyebrow">CHECK THE MONITOR PATH</p>
+  <h2>Find out whether you're listening through the computer.</h2>
+
+  <p>
+    Software monitoring requires the signal to enter the system,
+    be processed, and return to your headphones or speakers.
+    That trip takes time.
+  </p>
+
+  <p>
+    If your interface provides direct or hardware monitoring,
+    compare it with software monitoring.
+    If you're using software monitoring, investigate your audio buffer
+    and any processing adding significant latency.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't change ten settings at once.</strong>
+    First determine which monitoring path you're actually hearing.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-latency-double"
+     hidden>
+
+  <p class="eyebrow">YOU MAY BE HEARING TWO PATHS</p>
+  <h2>Check whether direct and software monitoring are both active.</h2>
+
+  <p>
+    Hearing the immediate signal plus a slightly delayed copy
+    can sound like an echo, doubling, or strange comb filtering.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Test one path at a time.</strong>
+    Temporarily disable one monitoring path.
+    If the doubling disappears, you've isolated the problem.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-latency-playback"
+     hidden>
+
+  <p class="eyebrow">THIS IS DIFFERENT FROM MONITORING DELAY</p>
+  <h2>Check whether the recorded audio itself is misplaced.</h2>
+
+  <p>
+    Record a simple transient test and compare the recorded event
+    with where you expect it to appear on the timeline.
+  </p>
+
+  <p>
+    If the recorded material is consistently offset,
+    investigate interface drivers, DAW recording-offset settings,
+    latency compensation, and the specific monitoring/routing setup.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Measure before compensating.</strong>
+    A repeatable offset is much easier to troubleshoot
+    than moving tracks until they feel right.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     DOESN'T SOUND LIKE THE SOURCE
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="recording-source"
+     hidden>
+
+  <p class="eyebrow">RECORDING / SOURCE DOESN'T MATCH</p>
+  <h2>When does it stop sounding right?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-source-mic">
+      IT SOUNDS GOOD IN THE ROOM BUT NOT THROUGH THE MIC
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-source-chain">
+      IT SOUNDS GOOD EARLIER IN THE SIGNAL CHAIN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-source-playback">
+      THE RECORDING SEEMS FINE BUT PLAYBACK SOUNDS WRONG
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-source-mic"
+     hidden>
+
+  <p class="eyebrow">MOVE THE MICROPHONE</p>
+  <h2>The microphone doesn't hear from your listening position.</h2>
+
+  <p>
+    Before EQing the recording,
+    move the microphone and make short comparison recordings.
+  </p>
+
+  <p>
+    Try changes in distance, angle, height,
+    and position relative to the source.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Treat placement like EQ you can do before recording.</strong>
+    Find a position that gives you more of what you want
+    before asking processing to repair it.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-source-chain"
+     hidden>
+
+  <p class="eyebrow">FIND THE CHANGE</p>
+  <h2>Compare stages of the signal path.</h2>
+
+  <p>
+    If the source sounds right at one point and wrong at another,
+    the useful information is somewhere between those two points.
+  </p>
+
+  <p>
+    Check input type, gain, processing, routing,
+    converters, and any hardware between the two stages.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Find the last place it sounded right.</strong>
+    Then move forward one stage at a time.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-source-playback"
+     hidden>
+
+  <p class="eyebrow">CHECK WHAT YOU'RE LISTENING THROUGH</p>
+  <h2>The recording and the playback system are different parts of the problem.</h2>
+
+  <p>
+    Compare headphones, monitors, and another familiar playback system
+    if one is available.
+  </p>
+
+  <p>
+    Also check monitor routing, level controls,
+    accidental processing, and anything inserted on the playback path.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Ask whether the recording changed or your listening path changed.</strong>
+    Don't rerecord something until you've separated those two possibilities.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     ALREADY RECORDED
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="recording-already"
+     hidden>
+
+  <p class="eyebrow">RECORDING / DAMAGE CONTROL</p>
+  <h2>What's wrong with the recording you already have?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-already-clipped">
+      IT'S CLIPPED / DISTORTED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-already-noisy">
+      IT'S NOISY
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-already-bleed">
+      THERE'S TOO MUCH BLEED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-already-bad">
+      IT JUST SOUNDS BAD
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="recording-already-rerecord">
+      I'M TRYING TO DECIDE IF I SHOULD RERECORD IT
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-already-clipped"
+     hidden>
+
+  <p class="eyebrow">DON'T PRETEND IT DIDN'T HAPPEN</p>
+  <h2>First decide how audible the damage actually is.</h2>
+
+  <p>
+    Lowering the level after recording does not remove distortion
+    that was created earlier in the signal path.
+  </p>
+
+  <p>
+    Restoration tools may reduce some audible artifacts,
+    but don't assume they can reconstruct a clean recording perfectly.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If the performance can reasonably be recorded again, compare the cost.</strong>
+    Ten minutes rerecording may be better than an hour trying to rescue it.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-already-noisy"
+     hidden>
+
+  <p class="eyebrow">LISTEN BEFORE CLEANING</p>
+  <h2>How much does the noise matter in the actual production?</h2>
+
+  <p>
+    Check the recording in context before applying aggressive noise reduction.
+    Processing that removes noise can also change the wanted sound.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Use the smallest intervention that solves the actual problem.</strong>
+    Silence between phrases may need editing or automation.
+    Constant noise may require a different approach.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-already-bleed"
+     hidden>
+
+  <p class="eyebrow">DON'T SOLO YOURSELF INTO A PROBLEM</p>
+  <h2>Listen to the complete performance first.</h2>
+
+  <p>
+    If the bleed isn't hurting the combined recording,
+    leaving it alone may be the best move.
+  </p>
+
+  <p>
+    If it is causing a specific problem,
+    try automation, editing, gating or expansion,
+    and reconsider how heavily the affected track needs to be processed.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Fix a symptom you can actually identify.</strong>
+    “There is bleed” is an observation.
+    “The snare in the vocal mic makes the vocal compressor pump” is a problem.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-already-bad"
+     hidden>
+
+  <p class="eyebrow">DEFINE "BAD"</p>
+  <h2>Turn the reaction into something you can test.</h2>
+
+  <p>
+    Is it too dark? Too bright? Too roomy?
+    Too distorted? Too distant? Too noisy?
+    Does the performance feel wrong?
+  </p>
+
+  <p>
+    Pick the most obvious symptom first
+    instead of adding processing until something feels better.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Name one problem.</strong>
+    A specific problem gives you something to investigate.
+    “It sucks” gives you an extremely accurate emotional assessment
+    and almost no diagnostic information.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="recording-already-rerecord"
+     hidden>
+
+  <p class="eyebrow">MAKE THE BORING DECISION</p>
+  <h2>Compare fixing it with recording it again.</h2>
+
+  <p>
+    Consider the performance, the problem,
+    how difficult the setup is to recreate,
+    and how much repair the existing recording needs.
+  </p>
+
+  <p>
+    If the performance is special or impossible to reproduce,
+    working around technical flaws may be worth it.
+    If the performance is easily repeatable,
+    recording a cleaner version may be the simpler solution.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't rerecord automatically, and don't rescue automatically.</strong>
+    Keep the version that best serves the music after considering
+    the actual cost of each option.
+  </div>
+
+</div>
 
 </section>
 

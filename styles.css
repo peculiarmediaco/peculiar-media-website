@@ -1500,3 +1500,18 @@ footer {
   }
 
 }
+
+@media (max-width: 800px) {
+
+  .challenge-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .secondary-challenge-button {
+    width: 100%;
+    padding: 14px 18px;
+  }
+
+}

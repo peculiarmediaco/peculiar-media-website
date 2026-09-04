@@ -171,9 +171,11 @@
   GUITAR
 </button>
 
-    <button type="button" disabled>
-      BASS
-    </button>
+    <button type="button"
+        class="trouble-choice"
+        data-target="bass-problems">
+  BASS
+</button>
 
     <button type="button" disabled>
       KEYS / SYNTH
@@ -2252,6 +2254,801 @@
     <strong>Listen before correcting.</strong>
     Don't automatically align every waveform or edit every difference away.
     First decide whether the combined sound is actually a problem.
+  </div>
+
+</div>
+
+  <!-- =====================================================
+     BASS
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-problems"
+     hidden>
+
+  <p class="eyebrow">BASS</p>
+
+  <h2>What's wrong with the bass?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-cant-hear">
+      CAN'T HEAR THE BASS
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-boomy">
+      TOO BOOMY / TOO MUCH LOW END
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-muddy">
+      MUDDY / NO DEFINITION
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-inconsistent">
+      SOME NOTES JUMP OUT / OTHERS DISAPPEAR
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-kick">
+      BASS AND KICK ARE FIGHTING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-di-amp">
+      DI / AMP TRACKS SOUND WEIRD TOGETHER
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     BASS / CAN'T HEAR IT
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-cant-hear"
+     hidden>
+
+  <p class="eyebrow">BASS / CAN'T HEAR IT</p>
+
+  <h2>When does the bass disappear?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-cant-hear-anywhere">
+      I CAN BARELY HEAR IT ANYWHERE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-cant-hear-mix">
+      IT SOUNDS FINE ALONE BUT DISAPPEARS IN THE MIX
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-cant-hear-small">
+      I HEAR IT ON BIG SPEAKERS BUT NOT SMALL ONES
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-cant-hear-boomy">
+      TURNING IT UP JUST MAKES THE MIX BOOMY
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-cant-hear-anywhere"
+     hidden>
+
+  <p class="eyebrow">START SIMPLE</p>
+
+  <h2>Make sure this is actually a level problem.</h2>
+
+  <p>
+    Bring the bass up and listen again before adding processing.
+    If it simply needed more level, you've solved the problem.
+  </p>
+
+  <p>
+    If increasing the level creates boominess, masking, or some other
+    problem before the bass becomes clear, you've learned that level
+    alone probably isn't the whole issue.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Also check the source:</strong>
+    Make sure the recorded bass actually contains the character
+    and definition you're expecting to hear.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-cant-hear-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK FOR MASKING</p>
+
+  <h2>Find out what makes the bass disappear.</h2>
+
+  <p>
+    Bring the rest of the mix back in one section at a time,
+    or temporarily lower likely competitors.
+  </p>
+
+  <p>
+    Kick, guitars, keyboards, and other low or low-mid-heavy sounds
+    can make the bass harder to distinguish even when its level
+    seems reasonable.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't immediately boost the bass.</strong>
+    First figure out what appeared at the same time the bass disappeared.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-cant-hear-small"
+     hidden>
+
+  <p class="eyebrow">CHECK TRANSLATION</p>
+
+  <h2>What part of the bass sound survives on the smaller speaker?</h2>
+
+  <p>
+    Small playback systems may reproduce less of the deepest bass
+    than larger speakers or headphones.
+  </p>
+
+  <p>
+    Listen to whether the recording contains enough upper harmonic,
+    attack, or midrange information to make the bass recognizable
+    when the deepest part of the sound isn't reproduced as strongly.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't just add more sub-bass.</strong>
+    If the playback system can't reproduce that information well,
+    adding more of it may not solve the problem you're hearing.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-cant-hear-boomy"
+     hidden>
+
+  <p class="eyebrow">LEVEL ISN'T THE WHOLE PROBLEM</p>
+
+  <h2>Good. Turning it up taught you something.</h2>
+
+  <p>
+    If the mix gets heavier or muddier but the bass still isn't easier
+    to follow, the part you need to hear may not be the part you're
+    making louder.
+  </p>
+
+  <p>
+    Listen for what gives the bass its definition — attack,
+    harmonic content, note clarity, or other information above
+    the deepest low frequencies.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Now investigate:</strong>
+    the source tone, competing instruments, and the balance of
+    low-frequency weight versus definition.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     BASS / BOOMY
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-boomy"
+     hidden>
+
+  <p class="eyebrow">BASS / TOO MUCH LOW END</p>
+
+  <h2>Where do you hear the boominess?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-boomy-everywhere">
+      ON PRETTY MUCH EVERYTHING I LISTEN ON
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-boomy-room">
+      MOSTLY IN MY MIXING ROOM
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-boomy-notes">
+      ONLY CERTAIN NOTES GET HUGE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-boomy-everywhere"
+     hidden>
+
+  <p class="eyebrow">CHECK THE SOURCE AND BALANCE</p>
+
+  <h2>Find out whether the bass itself contains too much low end.</h2>
+
+  <p>
+    Listen to the raw track and compare it with your processed version.
+    If the boominess was already there, look at the source.
+    If it appeared later, inspect what you added.
+  </p>
+
+  <p>
+    Also lower the bass temporarily. A tonal problem can sometimes
+    simply be a level problem.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then make the smallest useful change.</strong>
+    Don't remove the foundation of the bass while trying to control
+    one part of its sound.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-boomy-room"
+     hidden>
+
+  <p class="eyebrow">QUESTION THE ROOM</p>
+
+  <h2>Make sure you're not fixing your monitoring instead of your mix.</h2>
+
+  <p>
+    Low frequencies interact strongly with rooms and listening position.
+    If the bass sounds excessive where you mix but reasonable elsewhere,
+    your room or monitoring position may be influencing what you're hearing.
+  </p>
+
+  <p>
+    Compare the mix on headphones and other playback systems,
+    and move around your room while listening.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If the bass changes dramatically as you move:</strong>
+    treat that as evidence that the room is part of the problem
+    before making large changes to the mix.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-boomy-notes"
+     hidden>
+
+  <p class="eyebrow">DON'T FIX THE WHOLE TRACK YET</p>
+
+  <h2>Find out why only certain notes are jumping out.</h2>
+
+  <p>
+    Compare the loud notes with the surrounding notes.
+    The cause could be the performance, the instrument,
+    the recording, processing, or what your room is emphasizing.
+  </p>
+
+  <p>
+    Listen on another playback system before assuming the problem
+    exists in the recording itself.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If the problem really is in the track:</strong>
+    targeted automation or dynamic control may be more appropriate
+    than changing the tone of every note.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     BASS / MUDDY
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-muddy"
+     hidden>
+
+  <p class="eyebrow">BASS / MUDDY</p>
+
+  <h2>Is the bass unclear by itself or only in context?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-muddy-alone">
+      MUDDY BY ITSELF
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-muddy-mix">
+      MOSTLY MUDDY IN THE FULL MIX
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-muddy-alone"
+     hidden>
+
+  <p class="eyebrow">CHECK THE SOURCE</p>
+
+  <h2>Listen for what is obscuring the notes.</h2>
+
+  <p>
+    If you're still recording, check the instrument,
+    playing technique, pickup or DI signal, amp tone,
+    microphone placement, and effects.
+  </p>
+
+  <p>
+    If you're already mixing, bypass processing and compare
+    it with the raw track.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't automatically scoop the mids.</strong>
+    Some of the information that makes the bass understandable
+    may live there too.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-muddy-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK THE ARRANGEMENT</p>
+
+  <h2>See what else is occupying the same space.</h2>
+
+  <p>
+    Lower guitars, keys, kick, effects, or other dense elements
+    one at a time and listen for when the bass becomes clearer.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Ask:</strong>
+    Does the bass need less of something,
+    or does another instrument need to leave it more room?
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     BASS / INCONSISTENT NOTES
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-inconsistent"
+     hidden>
+
+  <p class="eyebrow">BASS / INCONSISTENT NOTES</p>
+
+  <h2>What kind of inconsistency are you hearing?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-inconsistent-performance">
+      SOME NOTES WERE PLAYED MUCH HARDER / SOFTER
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-inconsistent-pitch">
+      CERTAIN PITCHES ALWAYS JUMP OUT
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-inconsistent-processing">
+      IT GOT WORSE AFTER PROCESSING
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-inconsistent-performance"
+     hidden>
+
+  <p class="eyebrow">CHECK THE PERFORMANCE</p>
+
+  <h2>You may not need to change the entire bass sound.</h2>
+
+  <p>
+    If only a few notes are too loud or too quiet,
+    clip gain or volume automation can address those notes directly.
+  </p>
+
+  <p>
+    Compression can also reduce dynamic variation,
+    but first decide whether the problem is occasional
+    or happening throughout the performance.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>A few bad notes don't necessarily require
+    processing every note.</strong>
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-inconsistent-pitch"
+     hidden>
+
+  <p class="eyebrow">CHECK WHERE IT HAPPENS</p>
+
+  <h2>Does the same thing happen outside your mixing room?</h2>
+
+  <p>
+    If certain notes consistently become much louder or quieter,
+    compare them on headphones and other playback systems.
+  </p>
+
+  <p>
+    If the problem changes dramatically with your listening position,
+    the room may be contributing.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If it follows the recording everywhere:</strong>
+    investigate the instrument, performance, resonance,
+    and whether targeted dynamic control would help.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-inconsistent-processing"
+     hidden>
+
+  <p class="eyebrow">BACK UP</p>
+
+  <h2>Find the point where the balance changed.</h2>
+
+  <p>
+    Bypass your processing one piece at a time.
+    Pay attention to compression, saturation, EQ,
+    and anything else that responds differently to different notes.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If bypass fixes it, you've found your next question.</strong>
+    You don't need another processor yet.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     BASS / KICK
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-kick"
+     hidden>
+
+  <p class="eyebrow">BASS / KICK</p>
+
+  <h2>How are the bass and kick fighting?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-kick-boom">
+      TOGETHER THEY CREATE WAY TOO MUCH LOW END
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-kick-kick-lost">
+      THE KICK DISAPPEARS WHEN THE BASS COMES IN
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-kick-bass-lost">
+      THE BASS DISAPPEARS AROUND THE KICK
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-kick-unclear">
+      I CAN HEAR LOW END, BUT CAN'T TELL THEM APART
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-kick-boom"
+     hidden>
+
+  <p class="eyebrow">CHECK THE COMBINATION</p>
+
+  <h2>Find out what each source is contributing.</h2>
+
+  <p>
+    Listen to the kick alone, bass alone, and then both together.
+    Lower one at a time and pay attention to which change
+    actually clears the buildup.
+  </p>
+
+  <p>
+    You may need a different balance or tonal relationship,
+    but first identify which source is contributing what.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't automatically cut both.</strong>
+    Decide what job you want each one to do first.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-kick-kick-lost"
+     hidden>
+
+  <p class="eyebrow">FIND WHAT IDENTIFIES THE KICK</p>
+
+  <h2>The kick doesn't have to win only with sub-bass.</h2>
+
+  <p>
+    Listen to the kick's attack and character as well as its low end.
+    Then compare what the bass is occupying at the same moment.
+  </p>
+
+  <p>
+    Level, arrangement, tone, EQ, and dynamic control
+    can all change the relationship.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Sidechain compression is an option, not step one.</strong>
+    First understand what is actually disappearing and why.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-kick-bass-lost"
+     hidden>
+
+  <p class="eyebrow">LISTEN BETWEEN THE HITS</p>
+
+  <h2>Figure out whether this is level, masking, or dynamics.</h2>
+
+  <p>
+    Listen to the bass immediately before, during,
+    and after a kick hit.
+  </p>
+
+  <p>
+    If it only becomes difficult to hear during the kick,
+    you've narrowed the problem considerably.
+    Now compare their levels and tonal overlap before adding processing.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Preserve the groove.</strong>
+    The goal isn't necessarily to make both equally obvious
+    at every instant.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-kick-unclear"
+     hidden>
+
+  <p class="eyebrow">GIVE THEM DIFFERENT JOBS</p>
+
+  <h2>Decide what you want to recognize about each sound.</h2>
+
+  <p>
+    If the low end is powerful but everything blends into one undefined mass,
+    listen for the characteristics that distinguish the kick from the bass.
+  </p>
+
+  <p>
+    That distinction can come from arrangement, envelope,
+    attack, harmonic content, level, or tone — not only EQ.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Make a decision before making a move.</strong>
+    Which one should provide the deepest weight?
+    Which one should provide more note or attack definition?
+    There isn't one correct answer.
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     BASS / DI + AMP
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="bass-di-amp"
+     hidden>
+
+  <p class="eyebrow">BASS / DI + AMP</p>
+
+  <h2>What happens when you combine them?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-di-amp-thin">
+      THEY GET THINNER / WEAKER TOGETHER
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-di-amp-muddy">
+      THEY GET MUDDIER / LESS DEFINED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="bass-di-amp-why">
+      THEY SOUND OK — I JUST DON'T KNOW HOW TO BALANCE THEM
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-di-amp-thin"
+     hidden>
+
+  <p class="eyebrow">CHECK TIMING / PHASE</p>
+
+  <h2>The two signals may not be combining the way you expect.</h2>
+
+  <p>
+    A DI captures the signal directly while an amplifier microphone
+    also includes the amp, speaker, microphone, distance, and room.
+    Those paths do not necessarily arrive with the same timing or phase relationship.
+  </p>
+
+  <p>
+    Listen to each alone and then together.
+    If the combination loses weight or changes dramatically,
+    investigate their relationship.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Compare before correcting.</strong>
+    Polarity, timing, and microphone placement are things to investigate —
+    not switches to change automatically.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-di-amp-muddy"
+     hidden>
+
+  <p class="eyebrow">ASK WHAT EACH TRACK IS ADDING</p>
+
+  <h2>You don't necessarily need all of both signals.</h2>
+
+  <p>
+    Listen to the DI and amp separately and identify what you actually
+    like about each one.
+  </p>
+
+  <p>
+    If combining them simply adds more of the same information,
+    try changing their balance before processing either one heavily.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>And yes:</strong>
+    you're allowed to mute one entirely if the other already does the job.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="bass-di-amp-why"
+     hidden>
+
+  <p class="eyebrow">GIVE EACH ONE A REASON TO EXIST</p>
+
+  <h2>What does each track contribute?</h2>
+
+  <p>
+    Maybe the DI gives you definition and consistency.
+    Maybe the amp gives you character, distortion, space, or weight.
+    Maybe it's the opposite.
+  </p>
+
+  <p>
+    Start with one track, then slowly add the other until it contributes
+    something useful.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If you can't tell what the second track is improving,
+    you may not need it.</strong>
   </div>
 
 </div>

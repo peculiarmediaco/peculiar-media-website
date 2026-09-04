@@ -177,9 +177,11 @@
   BASS
 </button>
 
-    <button type="button" disabled>
-      KEYS / SYNTH
-    </button>
+    <button type="button"
+        class="trouble-choice"
+        data-target="keys-problems">
+  KEYS / SYNTH
+</button>
 
     <button type="button"
         class="trouble-choice"
@@ -3971,6 +3973,549 @@
     <strong>Useful check:</strong>
     Turn the mix very quiet too.
     What remains obvious when the overall level drops?
+  </div>
+
+</div>
+
+  <!-- =====================================================
+     KEYS / SYNTH
+     ===================================================== -->
+
+<div class="trouble-step"
+     id="keys-problems"
+     hidden>
+
+  <p class="eyebrow">KEYS / SYNTH</p>
+
+  <h2>What's wrong with the keys or synth?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-buried">
+      DISAPPEARS IN THE MIX
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-too-big">
+      TAKES UP WAY TOO MUCH SPACE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-muddy">
+      SOUNDS MUDDY / CLUTTERED
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-harsh">
+      SOUNDS HARSH / PIERCING
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-stereo">
+      STEREO PATCH SOUNDS WEIRD / WEAK
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- KEYS / BURIED -->
+
+<div class="trouble-step"
+     id="keys-buried"
+     hidden>
+
+  <p class="eyebrow">KEYS / BURIED</p>
+
+  <h2>When does it disappear?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-buried-level">
+      IT'S JUST TOO QUIET
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-buried-mix">
+      IT SOUNDS FINE ALONE BUT VANISHES IN THE MIX
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-buried-section">
+      ONLY IN THE BUSIEST PARTS
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-buried-level"
+     hidden>
+
+  <p class="eyebrow">START SIMPLE</p>
+
+  <h2>Turn it up.</h2>
+
+  <p>
+    If the part is simply too quiet, fix the level before
+    looking for a processing solution.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then listen again.</strong>
+    If raising it makes something else disappear or makes the mix crowded,
+    you've learned that this isn't only a level problem.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-buried-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK FOR MASKING</p>
+
+  <h2>What arrives when the keys disappear?</h2>
+
+  <p>
+    Lower likely competitors one at a time.
+    Guitars, vocals, other keyboards, and dense effects
+    may be occupying similar space.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't automatically brighten the keys.</strong>
+    First identify what they're competing with.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-buried-section"
+     hidden>
+
+  <p class="eyebrow">THE ARRANGEMENT CHANGED</p>
+
+  <h2>The solution may only be needed in that section.</h2>
+
+  <p>
+    Compare the sparse section with the busy one.
+    What instruments or layers enter when the keys disappear?
+  </p>
+
+  <p>
+    Automation, arrangement changes, different voicings,
+    or moving a part into another register may solve the conflict
+    without changing the sound for the entire song.
+  </p>
+
+</div>
+
+
+<!-- KEYS / TOO BIG -->
+
+<div class="trouble-step"
+     id="keys-too-big"
+     hidden>
+
+  <p class="eyebrow">KEYS / TOO BIG</p>
+
+  <h2>What's making the sound feel enormous?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-too-big-level">
+      IT'S SIMPLY TOO LOUD
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-too-big-patch">
+      THE PATCH COVERS A HUGE RANGE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-too-big-effects">
+      THE REVERB / DELAY / WIDTH IS EVERYWHERE
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-too-big-level"
+     hidden>
+
+  <p class="eyebrow">START WITH LEVEL</p>
+
+  <h2>Turn it down.</h2>
+
+  <p>
+    Don't use EQ to solve a fader problem.
+    Lower the part until its basic relationship with the mix feels reasonable.
+  </p>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-too-big-patch"
+     hidden>
+
+  <p class="eyebrow">QUESTION THE SOUND</p>
+
+  <h2>The preset may have been designed to sound impressive by itself.</h2>
+
+  <p>
+    Listen to how much low end, high end, stereo width,
+    layering, modulation, and ambience are already built into the patch.
+  </p>
+
+  <p>
+    If you're still creating the part, try simplifying the patch
+    before trying to carve space out of it later.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Solo impressive and mix useful aren't always the same thing.</strong>
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-too-big-effects"
+     hidden>
+
+  <p class="eyebrow">REMOVE THE SPACE</p>
+
+  <h2>Listen to the dry sound.</h2>
+
+  <p>
+    Temporarily bypass reverb, delay, chorus, widening,
+    and other spatial effects.
+  </p>
+
+  <p>
+    If the mix suddenly opens up, add those elements back
+    only until they're contributing what you actually want.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>The patch may already contain effects.</strong>
+    Check the instrument itself before adding another layer of ambience in the mix.
+  </div>
+
+</div>
+
+
+<!-- KEYS / MUDDY -->
+
+<div class="trouble-step"
+     id="keys-muddy"
+     hidden>
+
+  <p class="eyebrow">KEYS / MUDDY</p>
+
+  <h2>Is the sound muddy alone or only with everything else?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-muddy-alone">
+      MUDDY BY ITSELF
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-muddy-mix">
+      MOSTLY MUDDY IN THE MIX
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-muddy-alone"
+     hidden>
+
+  <p class="eyebrow">CHECK THE SOURCE</p>
+
+  <h2>Start with the patch itself.</h2>
+
+  <p>
+    If this is a synth or software instrument,
+    see whether you can simplify the sound at the source.
+  </p>
+
+  <p>
+    Oscillators, layers, filters, effects, voicing,
+    and release times can all contribute to a dense sound.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Don't automatically EQ around a patch you can still change.</strong>
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-muddy-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK THE ARRANGEMENT</p>
+
+  <h2>Look for overlapping parts.</h2>
+
+  <p>
+    Compare the keys with guitars, bass, vocals,
+    and other sustained instruments.
+  </p>
+
+  <p>
+    Try muting parts or changing octaves and voicings
+    before assuming every conflict needs an EQ solution.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Especially with chords:</strong>
+    sometimes the cleanest EQ move is playing fewer notes.
+  </div>
+
+</div>
+
+
+<!-- KEYS / HARSH -->
+
+<div class="trouble-step"
+     id="keys-harsh"
+     hidden>
+
+  <p class="eyebrow">KEYS / HARSH</p>
+
+  <h2>Where does the harshness appear?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-harsh-alone">
+      IT'S HARSH BY ITSELF
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-harsh-mix">
+      MOSTLY WHEN EVERYTHING PLAYS
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-harsh-notes">
+      ONLY CERTAIN NOTES / SOUNDS
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-harsh-alone"
+     hidden>
+
+  <p class="eyebrow">CHECK THE PATCH</p>
+
+  <h2>Can you fix the sound before processing it?</h2>
+
+  <p>
+    If the instrument is still editable,
+    investigate its filter, oscillator balance, distortion,
+    resonance, effects, and other tone controls.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>If you're stuck with audio:</strong>
+    identify the area that's actually bothering you
+    and make the smallest useful adjustment.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-harsh-mix"
+     hidden>
+
+  <p class="eyebrow">CHECK THE COMBINATION</p>
+
+  <h2>The keys may only be one contributor.</h2>
+
+  <p>
+    Temporarily lower other bright elements and listen again.
+    Cymbals, guitars, vocals, and several synth layers can accumulate
+    into a harsh mix even when each sounds reasonable alone.
+  </p>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-harsh-notes"
+     hidden>
+
+  <p class="eyebrow">DON'T CHANGE EVERYTHING</p>
+
+  <h2>If only a few moments hurt, treat them like a few moments.</h2>
+
+  <p>
+    Determine whether a particular note, velocity,
+    synth layer, resonance, or effect is creating the problem.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>A targeted change may be enough.</strong>
+    Automation or dynamic processing can sometimes solve
+    an occasional problem without changing the entire sound.
+  </div>
+
+</div>
+
+
+<!-- KEYS / STEREO -->
+
+<div class="trouble-step"
+     id="keys-stereo"
+     hidden>
+
+  <p class="eyebrow">KEYS / STEREO</p>
+
+  <h2>What happens to the stereo sound?</h2>
+
+  <div class="mix-category-grid">
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-stereo-mono">
+      IT GETS WEAK / WEIRD IN MONO
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-stereo-wide">
+      IT'S SO WIDE THAT IT'S HARD TO PLACE
+    </button>
+
+    <button type="button"
+            class="trouble-choice"
+            data-target="keys-stereo-side">
+      ONE SIDE FEELS DIFFERENT / HEAVIER
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-stereo-mono"
+     hidden>
+
+  <p class="eyebrow">CHECK MONO COMPATIBILITY</p>
+
+  <h2>Find out what disappears when left and right combine.</h2>
+
+  <p>
+    Some stereo patches use delay, modulation, polarity,
+    or other differences between the left and right channels
+    to create width.
+  </p>
+
+  <p>
+    When those channels are combined, parts of the sound
+    can reinforce or cancel.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Try bypassing width and modulation effects one at a time.</strong>
+    Find out what is creating the change before trying to repair it.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-stereo-wide"
+     hidden>
+
+  <p class="eyebrow">QUESTION THE WIDTH</p>
+
+  <h2>Does this sound actually need the entire stereo field?</h2>
+
+  <p>
+    Narrow the patch temporarily and listen to what happens
+    to the rest of the arrangement.
+  </p>
+
+  <p>
+    If vocals, guitars, or other important parts suddenly have more room,
+    you've identified a useful tradeoff.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Wide isn't automatically better.</strong>
+    Width is something you can spend where it helps the arrangement.
+  </div>
+
+</div>
+
+
+<div class="trouble-step"
+     id="keys-stereo-side"
+     hidden>
+
+  <p class="eyebrow">ISOLATE LEFT AND RIGHT</p>
+
+  <h2>Listen to what each side actually contains.</h2>
+
+  <p>
+    Some stereo patches intentionally place different layers,
+    effects, or modulation on each side.
+  </p>
+
+  <p>
+    Listen to the left and right channels separately
+    before assuming the imbalance is accidental.
+  </p>
+
+  <div class="trouble-tip">
+    <strong>Then decide:</strong>
+    is the asymmetry hurting the mix,
+    or did you only notice it because you went looking for it?
   </div>
 
 </div>

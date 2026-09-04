@@ -5023,6 +5023,18 @@ troubleChoices.forEach((button) => {
 
 });
 
+const troubleshooterCards = document.querySelectorAll(".troubleshooter-card");
+
+troubleshooterCards.forEach((card) => {
+  card.addEventListener("click", () => {
+
+    document.querySelectorAll(".trouble-step").forEach((step) => {
+      hideBranch(step);
+    });
+
+  });
+});
+
 </script>
 
 </body>
